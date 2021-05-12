@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -63,6 +63,12 @@
 		19FD5619264C842E0022CEB7 /* CampIoasys2Fase */ = {
 			isa = PBXGroup;
 			children = (
+				19FD5634264C868A0022CEB7 /* Service */,
+				19FD5632264C86780022CEB7 /* Network */,
+				19FD5631264C86700022CEB7 /* Controller */,
+				19FD5630264C866A0022CEB7 /* View */,
+				19FD562F264C86610022CEB7 /* ViewModel */,
+				19FD562E264C865B0022CEB7 /* Model */,
 				19FD561A264C842E0022CEB7 /* AppDelegate.swift */,
 				19FD561C264C842E0022CEB7 /* SceneDelegate.swift */,
 				19FD561E264C842E0022CEB7 /* ViewController.swift */,
@@ -74,13 +80,54 @@
 			path = CampIoasys2Fase;
 			sourceTree = "<group>";
 		};
+		19FD562E264C865B0022CEB7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19FD562F264C86610022CEB7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		19FD5630264C866A0022CEB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19FD5631264C86700022CEB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		19FD5632264C86780022CEB7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		19FD5634264C868A0022CEB7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		503EEB71A264612071F3B4E9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				79CA53906FCD1E85EE5A3DC8 /* Pods-CampIoasys2Fase.debug.xcconfig */,
 				86706F3D6E4A127DFAAABCEC /* Pods-CampIoasys2Fase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

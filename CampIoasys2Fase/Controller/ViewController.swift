@@ -13,22 +13,24 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    var loginViewModel = LoginViewModel()
     
     
     
     
     @IBAction func buttonEntrar(_ sender: Any) {
-        let login = LoginModel(email: emailTextField.text!, password: passwordTextField.text!)
+        let parameters = ["email" : "\(emailTextField.text!)", "password" : "\(passwordTextField.text!)"]
         
-        var loginViewModel = LoginViewModel(loginModel: login)
+        
+        loginViewModel.doLogin(parameters: parameters) { result in
+            print(result)
+        }
         
             
         }
-
-        
-    }
     
     @IBAction func buttoCriarConta(_ sender: Any) {
+        
     }
     
     

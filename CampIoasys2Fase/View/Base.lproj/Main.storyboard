@@ -24,84 +24,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ArJ-YX-tCw">
-                                <rect key="frame" x="59" y="113" width="296" height="64"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ArJ-YX-tCw">
+                                <rect key="frame" x="79" y="113" width="257" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="6Pt-TX-Hjf"/>
+                                    <constraint firstAttribute="height" constant="62" id="bJw-Uu-CjC"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2A7-k0-tlF">
-                                <rect key="frame" x="74" y="258" width="268" height="48"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lib-3X-SqH">
+                                <rect key="frame" x="24" y="373" width="366" height="107.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1f6-HT-F84">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="41.5"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="24"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui seu email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A6I-UN-wNO">
+                                        <rect key="frame" x="0.0" y="53.5" width="366" height="54"/>
+                                        <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="61Y-Yh-Tm1"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="editEmailTextField:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="0EP-3o-KEI"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ainda não tem uma conta? Cadastre - se aqui " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2A7-k0-tlF">
+                                <rect key="frame" x="74" y="237" width="268" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="exK-QB-ysN"/>
                                 </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="Ainda não tem uma conta? Cadastre - se aqui ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="20"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="nMW-Ac-pzW">
-                                <rect key="frame" x="24" y="387" width="366" height="185"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="lib-3X-SqH">
-                                        <rect key="frame" x="0.0" y="0.0" width="366" height="75"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1f6-HT-F84">
-                                                <rect key="frame" x="0.0" y="0.0" width="366" height="29"/>
-                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="24"/>
-                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui seu email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A6I-UN-wNO">
-                                                <rect key="frame" x="0.0" y="41" width="366" height="34"/>
-                                                <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="readsa:" destination="BYZ-38-t0r" eventType="editingChanged" id="Sdt-n7-d6i"/>
-                                                </connections>
-                                            </textField>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*E-mail ou senha incorretos, tente novamente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fX-j0-5g0">
-                                                <rect key="frame" x="0.0" y="75" width="366" height="0.0"/>
-                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
-                                                <color key="textColor" systemColor="systemRedColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="puc-7w-VSz">
-                                        <rect key="frame" x="0.0" y="110" width="366" height="75"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKo-hM-rn0">
-                                                <rect key="frame" x="0.0" y="0.0" width="366" height="29"/>
-                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="24"/>
-                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui sua senha..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WfM-fn-eTn">
-                                                <rect key="frame" x="0.0" y="41" width="366" height="34"/>
-                                                <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                            </textField>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esqueceu sua senha?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjo-44-RDk">
-                                                <rect key="frame" x="0.0" y="75" width="366" height="0.0"/>
-                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
-                                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwy-7O-vsT">
-                                <rect key="frame" x="32" y="653" width="352" height="41"/>
+                                <rect key="frame" x="32" y="732" width="352" height="64"/>
                                 <color key="backgroundColor" red="0.6588235294117647" green="0.39215686274509803" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="03b-Rj-4SN"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
                                 <state key="normal" title="Entrar">
                                     <color key="titleColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -115,27 +88,88 @@
                                     <action selector="buttonEntrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R6v-Ha-K2r"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="puc-7w-VSz">
+                                <rect key="frame" x="24" y="528.5" width="366" height="107.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vPK-5n-zvb">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="41.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKo-hM-rn0">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="41.5"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="24"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="* Digite sua senha" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwM-4u-DHw">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="41.5"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui sua senha..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WfM-fn-eTn">
+                                        <rect key="frame" x="0.0" y="53.5" width="366" height="54"/>
+                                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="N1P-bz-5oN"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="editPasswordTextField:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="6p5-a5-5Tj"/>
+                                        </connections>
+                                    </textField>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esqueceu sua senha?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjo-44-RDk">
+                                        <rect key="frame" x="0.0" y="107.5" width="366" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*E-mail ou senha incorretos, tente novamente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fX-j0-5g0">
+                                <rect key="frame" x="24" y="483" width="357" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="nMW-Ac-pzW" firstAttribute="top" secondItem="2A7-k0-tlF" secondAttribute="bottom" constant="81" id="2lg-2H-ySE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ArJ-YX-tCw" secondAttribute="trailing" constant="59" id="7NP-Fa-89X"/>
-                            <constraint firstItem="nMW-Ac-pzW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="FBn-YD-3OW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gwy-7O-vsT" secondAttribute="bottom" constant="168" id="G9x-1b-pcK"/>
+                            <constraint firstItem="puc-7w-VSz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="8RA-m7-9Qv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lib-3X-SqH" secondAttribute="trailing" constant="24" id="GMf-Au-idM"/>
                             <constraint firstAttribute="trailing" secondItem="2A7-k0-tlF" secondAttribute="trailing" constant="72" id="Go8-IB-KVq"/>
                             <constraint firstItem="2A7-k0-tlF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="ISA-cD-7JI"/>
-                            <constraint firstItem="2A7-k0-tlF" firstAttribute="top" secondItem="ArJ-YX-tCw" secondAttribute="bottom" constant="81" id="Kzv-Ca-oUs"/>
-                            <constraint firstItem="ArJ-YX-tCw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="dVx-oi-ipR"/>
-                            <constraint firstItem="Gwy-7O-vsT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="doC-r8-fao"/>
-                            <constraint firstItem="ArJ-YX-tCw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="ft2-eb-n4U"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nMW-Ac-pzW" secondAttribute="trailing" constant="24" id="lVj-rh-oz4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gwy-7O-vsT" secondAttribute="trailing" constant="30" id="qYr-Ku-YcZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ArJ-YX-tCw" secondAttribute="trailing" constant="78" id="KiQ-e2-Xd6"/>
+                            <constraint firstItem="puc-7w-VSz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="528.5" id="Lil-17-8Mf"/>
+                            <constraint firstItem="ArJ-YX-tCw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="NER-zd-k7m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9fX-j0-5g0" secondAttribute="trailing" constant="33" id="PZG-z1-tAe"/>
+                            <constraint firstItem="9fX-j0-5g0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="RFW-Uw-81B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="puc-7w-VSz" secondAttribute="trailing" constant="24" id="WTn-ql-ReM"/>
+                            <constraint firstItem="Gwy-7O-vsT" firstAttribute="top" secondItem="puc-7w-VSz" secondAttribute="bottom" constant="96" id="WvU-TJ-eIv"/>
+                            <constraint firstItem="Gwy-7O-vsT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="YL0-fg-0W6"/>
+                            <constraint firstItem="2A7-k0-tlF" firstAttribute="top" secondItem="ArJ-YX-tCw" secondAttribute="bottom" constant="62" id="bGV-ZB-8m8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gwy-7O-vsT" secondAttribute="bottom" constant="66" id="cmq-5V-v1A"/>
+                            <constraint firstItem="puc-7w-VSz" firstAttribute="top" secondItem="lib-3X-SqH" secondAttribute="bottom" constant="48" id="evA-ca-soZ"/>
+                            <constraint firstItem="lib-3X-SqH" firstAttribute="top" secondItem="2A7-k0-tlF" secondAttribute="bottom" constant="88" id="f95-7T-Hw6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gwy-7O-vsT" secondAttribute="trailing" constant="30" id="gMQ-c3-fYz"/>
+                            <constraint firstItem="ArJ-YX-tCw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="jK8-7w-Vza"/>
+                            <constraint firstItem="9fX-j0-5g0" firstAttribute="top" secondItem="A6I-UN-wNO" secondAttribute="bottom" constant="2.5" id="nwb-6g-jvY"/>
+                            <constraint firstItem="lib-3X-SqH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="uMc-dQ-Nzt"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="A6I-UN-wNO" id="ZQ5-w9-I40"/>
-                        <outlet property="errormsgTextField" destination="9fX-j0-5g0" id="uNW-qn-e4D"/>
+                        <outlet property="errormsgcredenciaisLabel" destination="9fX-j0-5g0" id="WYn-WP-Yz5"/>
+                        <outlet property="errormsgsenhaLabel" destination="dwM-4u-DHw" id="ZiV-ir-IM1"/>
                         <outlet property="passwordTextField" destination="WfM-fn-eTn" id="rRJ-fc-VLG"/>
                     </connections>
                 </viewController>
@@ -145,7 +179,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo.png" width="259" height="64"/>
+        <image name="logo.png" width="261" height="66"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

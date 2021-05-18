@@ -22,8 +22,7 @@ class LoginViewModel {
             
             if let error = error {
                 completion(false, error.localizedDescription)
-            }
-            if let result = result{
+            }else{
                 completion(true, nil)
             }
             

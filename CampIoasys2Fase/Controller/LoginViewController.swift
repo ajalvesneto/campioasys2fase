@@ -13,8 +13,8 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var errormsgTextField: UILabel!
-    
+    @IBOutlet weak var errormsgcredenciaisLabel: UILabel!
+    @IBOutlet weak var errormsgsenhaLabel: UILabel!
     
     var loginViewModel = LoginViewModel()
     
@@ -28,23 +28,51 @@ class LoginViewController: UIViewController {
     
     // MARK: - Actions
     @IBAction func buttonEntrar(_ sender: Any) {
+        if (passwordTextField.text == "") {
+            exibeErro(self.errormsgsenhaLabel, false)
+            return
+        }else{
+            exibeErro(self.errormsgsenhaLabel, true)
+        }
+        
         let parameters = ["email": "\(emailTextField.text!)", "password": "\(passwordTextField.text!)"]
         
         loginViewModel.doLogin(parameters: parameters) { result, error  in
             if (result){
                 print("Logou")
             }else{
-                self.exibeErro()
+                self.exibeErro(self.errormsgcredenciaisLabel, false)
             }
         }
     }
     
     
+    @IBAction func editEmailTextField(_ sender: Any) {
+       configTextField(emailTextField)
+
+    }
+    
+    @IBAction func editPasswordTextField(_ sender: Any) {
+        configTextField(passwordTextField)
+
+
+    }
+    
+    
+    
+    
     // MARK: - Methods
     
-    func exibeErro(){
-        errormsgTextField.isHidden = false
+    func exibeErro(_ label : UILabel, _ valor : Bool){
+        label.isHidden = valor
     }
+    
+    func configTextField( _ textField: UITextField){
+        textField.backgroundColor = .white
+        textField.layer.borderWidth = 2
+        textField.layer.borderColor = UIColor.blue.cgColor
+    }
+    
     
     
     

@@ -7,23 +7,22 @@
 
 import Foundation
 
-class API{
-    
-    let baseURl = "https://ioasyscamp.herokuapp.com"
+class API {
+    let baseURl = "https://apicamp.herokuapp.com"
     let version = "/api/v1/"
     
-    func returnURL() -> String{
+    func returnURL() -> String {
         return baseURl + version
     
     }
     
-    func returnEndpoint(endPoint : endPoints) -> String{
+    func returnEndpoint(endpoint : Endpoints) -> String{
         
-        return returnURL() + endPoint.rawValue
+        return returnURL() + endpoint.rawValue
         
     }
     
-    enum endPoints : String {
+    enum Endpoints : String {
         case login = "auth/signin"
         case listUsers = "users/"
     }

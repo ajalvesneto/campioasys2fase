@@ -7,33 +7,19 @@
 
 import Foundation
 
-class LoginViewModel{
+class LoginViewModel {
+    var api = API()
+    var network = Networking()
     
-   var api = API()
-   var network = Networking()
-    
-    /*var loginModel : LoginModel
-    
-    init(loginModel: LoginModel){
-        self.loginModel = loginModel
-    }*/
-    
-    func doLogin(parameters : [String : Any]?, completion : @escaping (String) -> ()){
-        network.performRequest(type: LoginResult.self, path: api.returnEndpoint(endPoint: .login), method: .post, parameters: parameters) { [self] result, error in
-                
+    func doLogin(parameters : [String : Any]?, headers : [String : String] , completion : @escaping (Any?, String?) -> ()){
+        network.performRequest(type: LoginResult.self, path: api.returnEndpoint(endpoint: .login), method: .post, headers : headers, parameters: parameters) { [self] result, error in
             if let error = error {
-                completion("Deu erro")
+                completion("Deu erro", error.localizedDescription)
             }
-            
             if let result = result{
-                completion("Deu Certo")
+                completion(result, nil)
             }
             
         }
-            
-          
-            
-        }
-    
+    }
 }
-    

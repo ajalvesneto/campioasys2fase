@@ -17,15 +17,14 @@ class LoginViewModel {
     
     // MARK: Methods
     
-    func doLogin(parameters : [String : Any]?, completion : @escaping (Any?, String?) -> ()){
+    func doLogin(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){
         network.performRequest(type: LoginResult.self, path: api.returnEndpoint(endpoint: .login), method: .post, headers : headers, parameters: parameters) { [self] result, error in
             
-            
             if let error = error {
-                completion("Deu erro", error.localizedDescription)
+                completion(false, error.localizedDescription)
             }
             if let result = result{
-                completion(result, nil)
+                completion(true, nil)
             }
             
         }

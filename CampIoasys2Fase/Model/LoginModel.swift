@@ -11,16 +11,16 @@ struct LoginModel : Codable {
     let id : String
     let name : String
     let email : String
-    let isAdmin : Bool
+   /* let isAdmin : Bool
     let dateCreation : String
-    let dateUpdate : String
+    let dateUpdate : String*/
     let isDeleted : Bool
     
     
     enum CodingKeys : String, CodingKey {
-        case id, name, email, isAdmin, isDeleted
-        case dateCreation = "createdAt"
-        case dateUpdate = "updatedAt"
+        case id, name, email, /*isAdmin,*/ isDeleted
+        /*case dateCreation = "createdAt"
+        case dateUpdate = "updatedAt"*/
     }
 }
 

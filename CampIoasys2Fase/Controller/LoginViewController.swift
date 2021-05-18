@@ -9,14 +9,16 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-    // MARK: - Atributes
+    // MARK: - IBOutlet
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var errormsgTextField: UILabel!
+    
+    
     var loginViewModel = LoginViewModel()
     
-    
-    // MARK: - Life Cycle
+    // MARK: - Life Cycle Methods
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,19 +26,28 @@ class LoginViewController: UIViewController {
     }
     
     
-    // MARK: - Methods
+    // MARK: - Actions
     @IBAction func buttonEntrar(_ sender: Any) {
         let parameters = ["email": "\(emailTextField.text!)", "password": "\(passwordTextField.text!)"]
         
-       
-        
         loginViewModel.doLogin(parameters: parameters) { result, error  in
-            
+            if (result){
+                print("Logou")
+            }else{
+                self.exibeErro()
+            }
         }
     }
     
-    @IBAction func buttoCriarConta(_ sender: Any) {
+    
+    // MARK: - Methods
+    
+    func exibeErro(){
+        errormsgTextField.isHidden = false
     }
+    
+    
+    
     
     
 }

@@ -140,6 +140,13 @@
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Tzr-UG-fOu">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="1Sd-Wh-FTq"/>
+                                    <constraint firstAttribute="width" constant="100" id="QsS-kB-Qsw"/>
+                                </constraints>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -160,9 +167,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gwy-7O-vsT" secondAttribute="bottom" constant="66" id="cmq-5V-v1A"/>
                             <constraint firstItem="puc-7w-VSz" firstAttribute="top" secondItem="lib-3X-SqH" secondAttribute="bottom" constant="48" id="evA-ca-soZ"/>
                             <constraint firstItem="lib-3X-SqH" firstAttribute="top" secondItem="2A7-k0-tlF" secondAttribute="bottom" constant="88" id="f95-7T-Hw6"/>
+                            <constraint firstItem="Tzr-UG-fOu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fqe-mI-gUn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gwy-7O-vsT" secondAttribute="trailing" constant="30" id="gMQ-c3-fYz"/>
                             <constraint firstItem="ArJ-YX-tCw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="jK8-7w-Vza"/>
                             <constraint firstItem="9fX-j0-5g0" firstAttribute="top" secondItem="A6I-UN-wNO" secondAttribute="bottom" constant="2.5" id="nwb-6g-jvY"/>
+                            <constraint firstItem="Tzr-UG-fOu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tgR-kE-VCb"/>
                             <constraint firstItem="lib-3X-SqH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="uMc-dQ-Nzt"/>
                         </constraints>
                     </view>
@@ -171,6 +180,7 @@
                         <outlet property="errormsgcredenciaisLabel" destination="9fX-j0-5g0" id="WYn-WP-Yz5"/>
                         <outlet property="errormsgsenhaLabel" destination="dwM-4u-DHw" id="ZiV-ir-IM1"/>
                         <outlet property="passwordTextField" destination="WfM-fn-eTn" id="rRJ-fc-VLG"/>
+                        <outlet property="spinnerIndicator" destination="Tzr-UG-fOu" id="ZAt-fh-ybR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -16,6 +16,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var errormsgcredenciaisLabel: UILabel!
     @IBOutlet weak var errormsgsenhaLabel: UILabel!
     
+    @IBOutlet weak var spinnerIndicator: UIActivityIndicatorView!
+    
+    
     var loginViewModel = LoginViewModel()
     
     // MARK: - Life Cycle Methods
@@ -26,7 +29,7 @@ class LoginViewController: UIViewController {
     }
     
     
-    // MARK: - Actions
+    // MARK: - IBActions
     @IBAction func buttonEntrar(_ sender: Any) {
         if (passwordTextField.text == "") {
             exibeErro(self.errormsgsenhaLabel, false)
@@ -37,7 +40,9 @@ class LoginViewController: UIViewController {
         
         let parameters = ["email": "\(emailTextField.text!)", "password": "\(passwordTextField.text!)"]
         
+        startStopAnimation()
         loginViewModel.doLogin(parameters: parameters) { result, error  in
+            self.startStopAnimation()
             if (result){
                 print("Logou")
             }else{
@@ -71,6 +76,15 @@ class LoginViewController: UIViewController {
         textField.backgroundColor = .white
         textField.layer.borderWidth = 2
         textField.layer.borderColor = UIColor.blue.cgColor
+    }
+    
+    func startStopAnimation(){
+        if (spinnerIndicator.isHidden){
+            spinnerIndicator.isHidden = false
+            spinnerIndicator.startAnimating()
+        }else{
+            spinnerIndicator.stopAnimating()
+        }
     }
     
     

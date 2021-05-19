@@ -54,9 +54,6 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="editEmailTextField:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="0EP-3o-KEI"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -122,9 +119,6 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="editPasswordTextField:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="6p5-a5-5Tj"/>
-                                        </connections>
                                     </textField>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esqueceu sua senha?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjo-44-RDk">
                                         <rect key="frame" x="0.0" y="107.5" width="366" height="0.0"/>

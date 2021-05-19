@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - IBOutlet
     
@@ -25,7 +25,16 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
         // Do any additional setup after loading the view.
+    }
+    
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        textField.backgroundColor = .white
+        textField.layer.borderWidth = 2
+        textField.layer.borderColor = UIColor.blue.cgColor
     }
     
     
@@ -50,21 +59,7 @@ class LoginViewController: UIViewController {
             }
         }
     }
-    
-    
-    @IBAction func editEmailTextField(_ sender: Any) {
-       configTextField(emailTextField)
 
-    }
-    
-    @IBAction func editPasswordTextField(_ sender: Any) {
-        configTextField(passwordTextField)
-
-
-    }
-    
-    
-    
     
     // MARK: - Methods
     

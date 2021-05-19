@@ -7,21 +7,25 @@
 
 import Foundation
 
-class LoginViewModel{
+class LoginViewModel {
     
-   var api = API()
-   var network = Networking()
+    // MARK: Atributes
+    var api = API()
+    var network = Networking()
     
-    var loginModel : LoginModel
+    let headers = ["Content-Type" : "application/json"]
     
-    init(loginModel: LoginModel){
-        self.loginModel = loginModel
-    }
+    // MARK: Methods
     
-    func login(){
-        network.performRequest(type: LoginModel.self, path: api.returnEndpoint(endPoint: .login), method: .post, parameters: LoginModel) { Decodable?, Error? in
+    func doLogin(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){
+        network.performRequest(type: LoginResult.self, path: api.returnEndpoint(endpoint: .login), method: .post, headers : headers, parameters: parameters) { [self] result, error in
+            
+            if let error = error {
+                completion(false, error.localizedDescription)
+            }else{
+                completion(true, nil)
+            }
             
         }
     }
 }
-    

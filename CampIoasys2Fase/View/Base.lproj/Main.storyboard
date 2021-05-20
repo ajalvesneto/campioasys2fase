@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YDZ-ga-LCh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -179,7 +179,263 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="72.991071428571431"/>
+            <point key="canvasLocation" x="-945" y="80"/>
+        </scene>
+        <!--Register Scroll View Controller-->
+        <scene sceneID="Fel-Es-ObA">
+            <objects>
+                <viewController id="YDZ-ga-LCh" customClass="RegisterScrollViewController" customModule="CampIoasys2Fase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Rr-qX-z04">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CV8-gZ-wwz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="1456"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZE-G5-IyQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1956"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="gX4-hU-sHi">
+                                                <rect key="frame" x="57" y="69" width="300" height="66"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estamos quase lá!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQ3-ka-iQ8">
+                                                <rect key="frame" x="21" y="207" width="286" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="Aca-Rg-Dca"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="36"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precisamos de algumas informaçoes para criar sua conta!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8x-6Y-XYH">
+                                                <rect key="frame" x="24" y="267" width="366" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="3hp-ub-vsm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
+                                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Bdu-x3-AAj">
+                                                <rect key="frame" x="24" y="363" width="366" height="107.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Nome e Sobrenome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qgw-r7-wIf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="41.5"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="24"/>
+                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui seu nome e sobrenome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LBt-5y-qng">
+                                                        <rect key="frame" x="0.0" y="53.5" width="366" height="54"/>
+                                                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="54" id="aGg-b3-7X3"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="uBC-Yh-zQj">
+                                                <rect key="frame" x="24" y="518.5" width="366" height="107.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Telefone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1iR-Fd-wnH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="41.5"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="24"/>
+                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui seu número com DDD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BvJ-Rf-49v">
+                                                        <rect key="frame" x="0.0" y="53.5" width="366" height="54"/>
+                                                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="54" id="m9y-qe-lOA"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="tel"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="CmS-iF-egv">
+                                                <rect key="frame" x="24" y="674" width="366" height="108"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajh-IE-Qwf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="42"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="24"/>
+                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui seu email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vMp-iO-bX0">
+                                                        <rect key="frame" x="0.0" y="54" width="366" height="54"/>
+                                                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="54" id="zbv-7s-0re"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="g76-38-tfs">
+                                                <rect key="frame" x="24" y="830" width="366" height="107.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oy0-aX-QUr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="41.5"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="24"/>
+                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui sua senha..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y1l-je-VIg">
+                                                        <rect key="frame" x="0.0" y="53.5" width="366" height="54"/>
+                                                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="54" id="odN-Sb-Tcw"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s03-Gp-arX">
+                                                <rect key="frame" x="24" y="1189" width="366" height="64"/>
+                                                <color key="backgroundColor" red="0.6588235294" green="0.3921568627" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="HVw-uO-NWz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
+                                                <state key="normal" title="Cadastrar">
+                                                    <color key="titleColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="buttonEntrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cda-qh-FCi"/>
+                                                    <action selector="registerButton:" destination="YDZ-ga-LCh" eventType="touchUpInside" id="NxG-cL-83n"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8cF-ja-XuD">
+                                                <rect key="frame" x="24" y="985.5" width="366" height="107.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Confirme sua senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSR-5e-b2F">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="41.5"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="24"/>
+                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite novamente a senha criada" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AFR-Oo-5au">
+                                                        <rect key="frame" x="0.0" y="53.5" width="366" height="54"/>
+                                                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="54" id="Xvz-mH-hWg"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="s03-Gp-arX" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="24" id="0yS-TQ-0QV"/>
+                                            <constraint firstItem="K8x-6Y-XYH" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="24" id="10h-Wj-hdH"/>
+                                            <constraint firstAttribute="trailing" secondItem="uBC-Yh-zQj" secondAttribute="trailing" constant="24" id="5up-ny-N8K"/>
+                                            <constraint firstItem="uBC-Yh-zQj" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="24" id="6Gv-RY-qk3"/>
+                                            <constraint firstItem="s03-Gp-arX" firstAttribute="top" secondItem="8cF-ja-XuD" secondAttribute="bottom" constant="96" id="CYb-yr-5Dh"/>
+                                            <constraint firstItem="Bdu-x3-AAj" firstAttribute="top" secondItem="K8x-6Y-XYH" secondAttribute="bottom" constant="48" id="Cry-bd-BQk"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bdu-x3-AAj" secondAttribute="trailing" constant="24" id="Cv0-Ns-qIW"/>
+                                            <constraint firstItem="8cF-ja-XuD" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="24" id="DXZ-dn-0mb"/>
+                                            <constraint firstItem="yQ3-ka-iQ8" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="21" id="DuC-uk-xlh"/>
+                                            <constraint firstItem="g76-38-tfs" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="24" id="KU7-qH-SWt"/>
+                                            <constraint firstItem="yQ3-ka-iQ8" firstAttribute="top" secondItem="gX4-hU-sHi" secondAttribute="bottom" constant="72" id="LIm-wQ-CxF"/>
+                                            <constraint firstAttribute="trailing" secondItem="K8x-6Y-XYH" secondAttribute="trailing" constant="24" id="RDf-dn-Oys"/>
+                                            <constraint firstItem="8cF-ja-XuD" firstAttribute="top" secondItem="g76-38-tfs" secondAttribute="bottom" constant="48" id="RJq-8x-T1g"/>
+                                            <constraint firstAttribute="trailing" secondItem="8cF-ja-XuD" secondAttribute="trailing" constant="24" id="S82-vU-eI7"/>
+                                            <constraint firstAttribute="trailing" secondItem="CmS-iF-egv" secondAttribute="trailing" constant="24" id="Shg-fK-tqC"/>
+                                            <constraint firstItem="CmS-iF-egv" firstAttribute="top" secondItem="uBC-Yh-zQj" secondAttribute="bottom" constant="48" id="YRL-Mi-VYZ"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yQ3-ka-iQ8" secondAttribute="trailing" constant="20" symbolic="YES" id="aJy-NT-sai"/>
+                                            <constraint firstAttribute="trailing" secondItem="s03-Gp-arX" secondAttribute="trailing" constant="24" id="cbR-xu-lhf"/>
+                                            <constraint firstAttribute="trailing" secondItem="g76-38-tfs" secondAttribute="trailing" constant="24" id="fcb-UR-gw1"/>
+                                            <constraint firstItem="CmS-iF-egv" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="24" id="jll-Xo-Qzt"/>
+                                            <constraint firstItem="gX4-hU-sHi" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="57" id="pix-uc-bgC"/>
+                                            <constraint firstItem="K8x-6Y-XYH" firstAttribute="top" secondItem="yQ3-ka-iQ8" secondAttribute="bottom" constant="12" id="tDW-3S-a8J"/>
+                                            <constraint firstItem="g76-38-tfs" firstAttribute="top" secondItem="CmS-iF-egv" secondAttribute="bottom" constant="48" id="wBP-aW-YWw"/>
+                                            <constraint firstItem="gX4-hU-sHi" firstAttribute="top" secondItem="JZE-G5-IyQ" secondAttribute="top" constant="69" id="xMU-yo-IZa"/>
+                                            <constraint firstItem="uBC-Yh-zQj" firstAttribute="top" secondItem="Bdu-x3-AAj" secondAttribute="bottom" constant="48" id="yFC-Ge-PTR"/>
+                                            <constraint firstItem="Bdu-x3-AAj" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="24" id="yqK-bG-BuO"/>
+                                            <constraint firstAttribute="trailing" secondItem="gX4-hU-sHi" secondAttribute="trailing" constant="57" id="zyC-Xl-WXM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JZE-G5-IyQ" firstAttribute="leading" secondItem="CV8-gZ-wwz" secondAttribute="leading" id="4fU-VR-Mb6"/>
+                                    <constraint firstAttribute="trailing" secondItem="JZE-G5-IyQ" secondAttribute="trailing" id="Cz1-3i-KJf"/>
+                                    <constraint firstItem="JZE-G5-IyQ" firstAttribute="width" secondItem="CV8-gZ-wwz" secondAttribute="width" id="OYJ-LM-Ylj"/>
+                                    <constraint firstItem="JZE-G5-IyQ" firstAttribute="height" secondItem="skK-ay-smh" secondAttribute="height" priority="1" constant="500" id="hMj-Ac-Red"/>
+                                    <constraint firstAttribute="bottom" secondItem="JZE-G5-IyQ" secondAttribute="bottom" id="rx5-FI-9k3"/>
+                                    <constraint firstItem="JZE-G5-IyQ" firstAttribute="top" secondItem="CV8-gZ-wwz" secondAttribute="top" id="vbg-ul-Eoj"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="z6l-Gy-dXt"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="skK-ay-smh"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="knl-Xt-pUm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CV8-gZ-wwz" firstAttribute="centerX" secondItem="9Rr-qX-z04" secondAttribute="centerX" id="2Eb-IL-2eL"/>
+                            <constraint firstItem="CV8-gZ-wwz" firstAttribute="width" secondItem="9Rr-qX-z04" secondAttribute="width" id="5uz-0o-hOe"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="CV8-gZ-wwz" secondAttribute="bottom" constant="-34" id="ANs-cC-dhG"/>
+                            <constraint firstItem="CV8-gZ-wwz" firstAttribute="top" secondItem="knl-Xt-pUm" secondAttribute="top" id="Sk3-lF-RN6"/>
+                            <constraint firstItem="knl-Xt-pUm" firstAttribute="trailing" secondItem="CV8-gZ-wwz" secondAttribute="trailing" id="gjv-Ad-Rjt"/>
+                            <constraint firstItem="CV8-gZ-wwz" firstAttribute="bottom" secondItem="knl-Xt-pUm" secondAttribute="bottom" constant="34" id="rLN-Xg-XSN"/>
+                            <constraint firstItem="CV8-gZ-wwz" firstAttribute="leading" secondItem="knl-Xt-pUm" secondAttribute="leading" id="wH6-at-YpW"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="1500"/>
+                    <connections>
+                        <outlet property="confirmpasswordTextField" destination="AFR-Oo-5au" id="aD8-uV-fOh"/>
+                        <outlet property="emailTextField" destination="vMp-iO-bX0" id="rBi-Zf-91Q"/>
+                        <outlet property="nameTextField" destination="LBt-5y-qng" id="GiV-TT-X4a"/>
+                        <outlet property="nomeTextField" destination="LBt-5y-qng" id="aeS-Ka-AY2"/>
+                        <outlet property="passwordTextField" destination="Y1l-je-VIg" id="hm5-O6-GD2"/>
+                        <outlet property="phoneTextField" destination="BvJ-Rf-49v" id="2OZ-kO-sMS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2uM-xL-3zh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123.18840579710145" y="79.6875"/>
         </scene>
     </scenes>
     <resources>

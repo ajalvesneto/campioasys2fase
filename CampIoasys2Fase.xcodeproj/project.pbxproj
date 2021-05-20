@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19546BA52655CC66003B894A /* RegisterScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19546BA42655CC66003B894A /* RegisterScrollViewController.swift */; };
 		1991D3092652AFFE00E0200F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1991D3082652AFFE00E0200F /* API.swift */; };
 		19A0740B2653F06C001C55B8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0740A2653F06B001C55B8 /* logo.png */; };
 		19A0740E26540073001C55B8 /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = 19A0740D26540073001C55B8 /* Lato */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19546BA42655CC66003B894A /* RegisterScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScrollViewController.swift; sourceTree = "<group>"; };
 		1991D3082652AFFE00E0200F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		19A0740A2653F06B001C55B8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Assets.xcassets/logo.png; sourceTree = "<group>"; };
 		19A0740D26540073001C55B8 /* Lato */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = Lato; path = CampIoasys2Fase/Resources/Fonts/Lato; sourceTree = SOURCE_ROOT; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				19FD561E264C842E0022CEB7 /* LoginViewController.swift */,
+				19546BA42655CC66003B894A /* RegisterScrollViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			files = (
 				19FD561F264C842E0022CEB7 /* LoginViewController.swift in Sources */,
 				19F9F0212651759D00333079 /* LoginModel.swift in Sources */,
+				19546BA52655CC66003B894A /* RegisterScrollViewController.swift in Sources */,
 				19F9F0272651DBE200333079 /* HTTPMethod.swift in Sources */,
 				19F9F0252651DBBF00333079 /* Network.swift in Sources */,
 				19FD561B264C842E0022CEB7 /* AppDelegate.swift in Sources */,

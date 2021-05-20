@@ -15,6 +15,8 @@ class UserViewModel {
     
     let headers = ["Content-Type" : "application/json"]
     
+
+    
     // MARK: Methods
     
     func doLogin(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){

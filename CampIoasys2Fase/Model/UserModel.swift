@@ -14,11 +14,12 @@ struct UserModel : Codable {
    /* let isAdmin : Bool
     let dateCreation : String
     let dateUpdate : String*/
-    let isDeleted : Bool
+    //let isDeleted : Bool
+
     
     
     enum CodingKeys : String, CodingKey {
-        case id, name, email, /*isAdmin,*/ isDeleted
+        case id, name, email //, /*isAdmin,*/ isDeleted
         /*case dateCreation = "createdAt"
         case dateUpdate = "updatedAt"*/
     }

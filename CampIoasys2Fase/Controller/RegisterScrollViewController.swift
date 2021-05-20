@@ -17,9 +17,8 @@ class RegisterScrollViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmpasswordTextField: UITextField!
-    /*@IBOutlet weak var errorLenghtPasswordLabel: UILabel!
-     @IBOutlet weak var errorDifferentPasswordLabel: UILabel!*/
-    @IBOutlet weak var spinnerIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var errorLenghtPasswordLabel: UILabel!
+    @IBOutlet weak var errorDifferentPasswordLabel: UILabel!
     
     
     // MARK: vars
@@ -72,7 +71,7 @@ class RegisterScrollViewController: UIViewController, UITextFieldDelegate {
             self.startStopAnimation()
             print("entrou")
             if (!result){
-                let successVC = self.storyboard?.instantiateViewController(identifier: "success") as! HomeViewController
+                let successVC = self.storyboard?.instantiateViewController(identifier: "success") as! SuccessViewController
                 self.navigationController?.pushViewController(successVC, animated: true)
             }else{
                 print(error!)
@@ -90,12 +89,12 @@ class RegisterScrollViewController: UIViewController, UITextFieldDelegate {
     }
     
     func startStopAnimation(){
-        if (spinnerIndicator.isHidden){
+        /*if (spinnerIndicator.isHidden){
             spinnerIndicator.isHidden = false
             spinnerIndicator.startAnimating()
         }else{
             spinnerIndicator.stopAnimating()
-        }
+        }*/
     }
     
     

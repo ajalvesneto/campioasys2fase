@@ -402,11 +402,22 @@
                                                 <color key="textColor" systemColor="systemRedColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkh-cf-pJ9">
+                                                <rect key="frame" x="8" y="8" width="79" height="24"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
+                                                <state key="normal" title="     Login" image="back_button">
+                                                    <color key="titleColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="back:" destination="YDZ-ga-LCh" eventType="touchUpInside" id="naa-ig-JWX"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="s03-Gp-arX" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="24" id="0yS-TQ-0QV"/>
                                             <constraint firstItem="K8x-6Y-XYH" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="24" id="10h-Wj-hdH"/>
+                                            <constraint firstItem="dkh-cf-pJ9" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leadingMargin" id="3tR-bc-SqF"/>
                                             <constraint firstItem="ccp-9o-bNK" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="24" id="42v-Pg-Mpu"/>
                                             <constraint firstAttribute="trailing" secondItem="uBC-Yh-zQj" secondAttribute="trailing" constant="24" id="5up-ny-N8K"/>
                                             <constraint firstItem="uBC-Yh-zQj" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="24" id="6Gv-RY-qk3"/>
@@ -434,10 +445,12 @@
                                             <constraint firstItem="ccp-9o-bNK" firstAttribute="top" secondItem="8cF-ja-XuD" secondAttribute="bottom" constant="2" id="mYc-DK-TnQ"/>
                                             <constraint firstItem="gX4-hU-sHi" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="57" id="pix-uc-bgC"/>
                                             <constraint firstItem="jxQ-re-rlj" firstAttribute="centerX" secondItem="JZE-G5-IyQ" secondAttribute="centerX" id="qAn-cZ-ide"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dkh-cf-pJ9" secondAttribute="trailing" constant="20" symbolic="YES" id="qIB-yU-owW"/>
                                             <constraint firstItem="s03-Gp-arX" firstAttribute="top" secondItem="ccp-9o-bNK" secondAttribute="bottom" constant="74.5" id="sg4-nj-i3E"/>
                                             <constraint firstItem="K8x-6Y-XYH" firstAttribute="top" secondItem="yQ3-ka-iQ8" secondAttribute="bottom" constant="12" id="tDW-3S-a8J"/>
                                             <constraint firstItem="g76-38-tfs" firstAttribute="top" secondItem="CmS-iF-egv" secondAttribute="bottom" constant="48" id="wBP-aW-YWw"/>
                                             <constraint firstItem="gX4-hU-sHi" firstAttribute="top" secondItem="JZE-G5-IyQ" secondAttribute="top" constant="69" id="xMU-yo-IZa"/>
+                                            <constraint firstItem="dkh-cf-pJ9" firstAttribute="top" secondItem="JZE-G5-IyQ" secondAttribute="topMargin" id="xph-zR-U8o"/>
                                             <constraint firstItem="uBC-Yh-zQj" firstAttribute="top" secondItem="Bdu-x3-AAj" secondAttribute="bottom" constant="48" id="yFC-Ge-PTR"/>
                                             <constraint firstItem="Bdu-x3-AAj" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="24" id="yqK-bG-BuO"/>
                                             <constraint firstAttribute="trailing" secondItem="gX4-hU-sHi" secondAttribute="trailing" constant="57" id="zyC-Xl-WXM"/>
@@ -479,7 +492,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2uM-xL-3zh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-510" y="81"/>
+            <point key="canvasLocation" x="-510.14492753623193" y="80.357142857142847"/>
         </scene>
         <!--Item-->
         <scene sceneID="0Zu-Cw-aJ2">
@@ -605,6 +618,7 @@
         <segue reference="kFL-op-dRO"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="back_button" width="12" height="20"/>
         <image name="confirm" width="170" height="170"/>
         <image name="logo.png" width="261" height="66"/>
         <systemColor name="systemBackgroundColor">

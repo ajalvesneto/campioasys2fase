@@ -45,6 +45,9 @@ class RegisterScrollViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    @IBAction func back(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     //MARK: IBActions
     @IBAction func registerButton(_ sender: Any) {
         

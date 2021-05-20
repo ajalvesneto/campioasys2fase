@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YDZ-ga-LCh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -19,7 +19,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="CampIoasys2Fase" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginStoryboard" id="BYZ-38-t0r" customClass="LoginViewController" customModule="CampIoasys2Fase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,21 +179,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-945" y="80"/>
+            <point key="canvasLocation" x="-1241" y="80"/>
         </scene>
         <!--Register Scroll View Controller-->
         <scene sceneID="Fel-Es-ObA">
             <objects>
                 <viewController id="YDZ-ga-LCh" customClass="RegisterScrollViewController" customModule="CampIoasys2Fase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Rr-qX-z04">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CV8-gZ-wwz">
-                                <rect key="frame" x="0.0" y="44" width="414" height="1456"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZE-G5-IyQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1956"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1352"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="gX4-hU-sHi">
                                                 <rect key="frame" x="57" y="69" width="300" height="66"/>
@@ -423,7 +423,6 @@
                             <constraint firstItem="CV8-gZ-wwz" firstAttribute="leading" secondItem="knl-Xt-pUm" secondAttribute="leading" id="wH6-at-YpW"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="1500"/>
                     <connections>
                         <outlet property="confirmpasswordTextField" destination="AFR-Oo-5au" id="aD8-uV-fOh"/>
                         <outlet property="emailTextField" destination="vMp-iO-bX0" id="rBi-Zf-91Q"/>
@@ -435,10 +434,111 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2uM-xL-3zh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-123.18840579710145" y="79.6875"/>
+            <point key="canvasLocation" x="-510" y="81"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="0Zu-Cw-aJ2">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcV-fH-aH3" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="home" id="pVn-z6-Rfo" customClass="HomeViewController" customModule="CampIoasys2Fase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gcx-Tt-fZT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="iXj-PH-HlO">
+                                <rect key="frame" x="79" y="113" width="257" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="8lW-gt-3sd"/>
+                                    <constraint firstAttribute="width" constant="257" id="uhr-wn-BOs"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NEa-pL-xhi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iXj-PH-HlO" firstAttribute="leading" secondItem="NEa-pL-xhi" secondAttribute="leading" constant="79" id="Bvu-Eb-3Zl"/>
+                            <constraint firstItem="NEa-pL-xhi" firstAttribute="trailing" secondItem="iXj-PH-HlO" secondAttribute="trailing" constant="78" id="alT-eV-HPX"/>
+                            <constraint firstItem="iXj-PH-HlO" firstAttribute="top" secondItem="NEa-pL-xhi" secondAttribute="top" constant="69" id="bM2-LV-g9g"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-1214" y="750"/>
+        </scene>
+        <!--Success View Controller-->
+        <scene sceneID="Qee-oR-ZTc">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yUR-Nh-nTd" sceneMemberID="firstResponder"/>
+                <viewController id="Bip-Kg-BrT" customClass="SuccessViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l7c-6g-WeE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="JVs-kU-yH8">
+                                <rect key="frame" x="59" y="111" width="296" height="66"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RQ-8d-5BR">
+                                <rect key="frame" x="24" y="721.5" width="366" height="64"/>
+                                <color key="backgroundColor" red="0.6588235294" green="0.3921568627" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="8N9-nG-WIt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
+                                <state key="normal" title="Acesse Agora">
+                                    <color key="titleColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonEntrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJo-cE-bhO"/>
+                                    <action selector="registerButton:" destination="YDZ-ga-LCh" eventType="touchUpInside" id="GKK-2P-RUC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Sua conta foi criada com sucesso!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdW-oC-ru8">
+                                <rect key="frame" x="24" y="473" width="366" height="152.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="72" id="Lep-vl-rcY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="36"/>
+                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="confirm" translatesAutoresizingMaskIntoConstraints="NO" id="RED-Wz-sOg">
+                                <rect key="frame" x="132" y="273" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="61f-Hb-Evc"/>
+                                    <constraint firstAttribute="height" constant="150" id="Ceo-Ia-VVw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mVd-gm-Vtr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mVd-gm-Vtr" firstAttribute="trailing" secondItem="2RQ-8d-5BR" secondAttribute="trailing" constant="24" id="1PU-3F-T0l"/>
+                            <constraint firstItem="mVd-gm-Vtr" firstAttribute="bottom" secondItem="2RQ-8d-5BR" secondAttribute="bottom" constant="76.5" id="EaC-me-QgS"/>
+                            <constraint firstItem="RED-Wz-sOg" firstAttribute="leading" secondItem="mVd-gm-Vtr" secondAttribute="leading" constant="132" id="EbJ-Uq-i6g"/>
+                            <constraint firstItem="JVs-kU-yH8" firstAttribute="leading" secondItem="mVd-gm-Vtr" secondAttribute="leading" constant="59" id="Ewi-u1-SgL"/>
+                            <constraint firstItem="RED-Wz-sOg" firstAttribute="top" secondItem="JVs-kU-yH8" secondAttribute="bottom" constant="96" id="MtC-4f-C9Z"/>
+                            <constraint firstItem="2RQ-8d-5BR" firstAttribute="top" secondItem="FdW-oC-ru8" secondAttribute="bottom" constant="96" id="WdV-WQ-J27"/>
+                            <constraint firstItem="mVd-gm-Vtr" firstAttribute="trailing" secondItem="FdW-oC-ru8" secondAttribute="trailing" constant="24" id="XwF-39-M0x"/>
+                            <constraint firstItem="2RQ-8d-5BR" firstAttribute="leading" secondItem="mVd-gm-Vtr" secondAttribute="leading" constant="24" id="eIh-rL-m2a"/>
+                            <constraint firstItem="JVs-kU-yH8" firstAttribute="top" secondItem="mVd-gm-Vtr" secondAttribute="top" constant="67" id="m2z-sP-kZp"/>
+                            <constraint firstItem="mVd-gm-Vtr" firstAttribute="trailing" secondItem="JVs-kU-yH8" secondAttribute="trailing" constant="59" id="pX4-RK-gTc"/>
+                            <constraint firstItem="mVd-gm-Vtr" firstAttribute="trailing" secondItem="RED-Wz-sOg" secondAttribute="trailing" constant="132" id="qPP-Td-hMp"/>
+                            <constraint firstItem="FdW-oC-ru8" firstAttribute="leading" secondItem="mVd-gm-Vtr" secondAttribute="leading" constant="24" id="sNC-50-uKA"/>
+                            <constraint firstItem="FdW-oC-ru8" firstAttribute="top" secondItem="RED-Wz-sOg" secondAttribute="bottom" constant="50" id="vdg-vS-MYz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="264" y="80"/>
         </scene>
     </scenes>
     <resources>
+        <image name="confirm" width="170" height="170"/>
         <image name="logo.png" width="261" height="66"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

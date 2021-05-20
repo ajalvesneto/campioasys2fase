@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegisterScrollViewController: UIViewController {
+class RegisterScrollViewController: UIViewController, UITextFieldDelegate {
     
     
     // MARK: IOBOutlets
@@ -21,6 +21,11 @@ class RegisterScrollViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameTextField.delegate = self
+        phoneTextField.delegate = self
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        confirmpasswordTextField.delegate = self
 
         // Do any additional setup after loading the view.
     }

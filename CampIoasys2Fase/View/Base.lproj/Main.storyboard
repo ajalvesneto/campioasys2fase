@@ -439,7 +439,6 @@
         <!--Home View Controller-->
         <scene sceneID="0Zu-Cw-aJ2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xcV-fH-aH3" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="home" id="pVn-z6-Rfo" customClass="HomeViewController" customModule="CampIoasys2Fase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gcx-Tt-fZT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -462,13 +461,13 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xcV-fH-aH3" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1214" y="750"/>
+            <point key="canvasLocation" x="-1220" y="751"/>
         </scene>
         <!--Success View Controller-->
         <scene sceneID="Qee-oR-ZTc">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yUR-Nh-nTd" sceneMemberID="firstResponder"/>
                 <viewController id="Bip-Kg-BrT" customClass="SuccessViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l7c-6g-WeE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -533,6 +532,7 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yUR-Nh-nTd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="264" y="80"/>
         </scene>

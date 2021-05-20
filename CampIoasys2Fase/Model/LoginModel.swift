@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LoginModel : Codable {
+struct UserModel : Codable {
     let id : String
     let name : String
     let email : String
@@ -24,13 +24,3 @@ struct LoginModel : Codable {
     }
 }
 
-struct LoginResult : Codable{
-    
-    let user : LoginModel?
-    let token : String?
-    
-    enum CodingKeys : String, CodingKey {
-        case user, token
-    }
-    
-}

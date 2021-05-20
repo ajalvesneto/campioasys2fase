@@ -7,7 +7,7 @@
 
 import Foundation
 
-class LoginViewModel {
+class UserViewModel {
     
     // MARK: Atributes
     var api = API()
@@ -19,6 +19,18 @@ class LoginViewModel {
     
     func doLogin(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){
         network.performRequest(type: LoginResult.self, path: api.returnEndpoint(endpoint: .login), method: .post, headers : headers, parameters: parameters) { [self] result, error in
+            
+            if let error = error {
+                completion(false, error.localizedDescription)
+            }else{
+                completion(true, nil)
+            }
+            
+        }
+    }
+    
+    func doRegister(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){
+        network.performRequest(type: UserModel.self, path: api.returnEndpoint(endpoint: .register), method: .post, headers : headers, parameters: parameters) { [self] result, error in
             
             if let error = error {
                 completion(false, error.localizedDescription)

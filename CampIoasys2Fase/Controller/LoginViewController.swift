@@ -15,11 +15,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errormsgcredenciaisLabel: UILabel!
     @IBOutlet weak var errormsgsenhaLabel: UILabel!
+    @IBOutlet weak var registerLabel: UILabel!
     
     @IBOutlet weak var spinnerIndicator: UIActivityIndicatorView!
     
-    
-    var loginViewModel = LoginViewModel()
+    var userViewModel = UserViewModel()
     
     // MARK: - Life Cycle Methods
     
@@ -27,7 +27,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         emailTextField.delegate = self
         passwordTextField.delegate = self
-        // Do any additional setup after loading the view.
+        
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(register(_:)))
+        
+        registerLabel.addGestureRecognizer(gestureRecognizer)
     }
     
     
@@ -50,27 +53,28 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let parameters = ["email": "\(emailTextField.text!)", "password": "\(passwordTextField.text!)"]
         
         startStopAnimation()
-        loginViewModel.doLogin(parameters: parameters) { result, error  in
+        userViewModel.doLogin(parameters: parameters) { result, error  in
             self.startStopAnimation()
             if (result){
-                print("Logou")
+                let homeVC = self.storyboard?.instantiateViewController(identifier: "home") as! HomeViewController
+                self.navigationController?.pushViewController(homeVC, animated: true)
             }else{
                 self.exibeErro(self.errormsgcredenciaisLabel, false)
             }
         }
     }
-
+    
+    
+    @objc func register(_ sender: Any) {
+        let registerVC = self.storyboard?.instantiateViewController(identifier: "register") as! RegisterScrollViewController
+        self.navigationController?.pushViewController(registerVC, animated: true)
+    }
+    
     
     // MARK: - Methods
     
     func exibeErro(_ label : UILabel, _ valor : Bool){
         label.isHidden = valor 
-    }
-    
-    func configTextField( _ textField: UITextField){
-        textField.backgroundColor = .white
-        textField.layer.borderWidth = 2
-        textField.layer.borderColor = UIColor.blue.cgColor
     }
     
     func startStopAnimation(){

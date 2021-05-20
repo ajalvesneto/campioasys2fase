@@ -64,7 +64,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Methods
     
     func exibeErro(_ label : UILabel, _ valor : Bool){
-        label.isHidden = valor
+        label.isHidden = valor 
     }
     
     func configTextField( _ textField: UITextField){

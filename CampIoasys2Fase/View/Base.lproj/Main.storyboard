@@ -405,6 +405,13 @@
                                                     <action selector="back:" destination="YDZ-ga-LCh" eventType="touchUpInside" id="naa-ig-JWX"/>
                                                 </connections>
                                             </button>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="vcf-aZ-BPe">
+                                                <rect key="frame" x="157" y="626" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="FRt-P8-9Kb"/>
+                                                    <constraint firstAttribute="width" constant="100" id="MLG-Fa-Mgk"/>
+                                                </constraints>
+                                            </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -428,10 +435,12 @@
                                             <constraint firstAttribute="trailing" secondItem="CmS-iF-egv" secondAttribute="trailing" constant="24" id="Shg-fK-tqC"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ccp-9o-bNK" secondAttribute="trailing" constant="20" symbolic="YES" id="Umf-IZ-jRr"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ox2-Ok-daU" secondAttribute="trailing" constant="20" symbolic="YES" id="Uvm-zu-cqF"/>
+                                            <constraint firstItem="vcf-aZ-BPe" firstAttribute="centerY" secondItem="JZE-G5-IyQ" secondAttribute="centerY" id="Whc-UB-mfz"/>
                                             <constraint firstItem="CmS-iF-egv" firstAttribute="top" secondItem="uBC-Yh-zQj" secondAttribute="bottom" constant="48" id="YRL-Mi-VYZ"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yQ3-ka-iQ8" secondAttribute="trailing" constant="20" symbolic="YES" id="aJy-NT-sai"/>
                                             <constraint firstAttribute="trailing" secondItem="s03-Gp-arX" secondAttribute="trailing" constant="24" id="cbR-xu-lhf"/>
                                             <constraint firstAttribute="trailing" secondItem="g76-38-tfs" secondAttribute="trailing" constant="24" id="fcb-UR-gw1"/>
+                                            <constraint firstItem="vcf-aZ-BPe" firstAttribute="centerX" secondItem="JZE-G5-IyQ" secondAttribute="centerX" id="j1k-b1-9HC"/>
                                             <constraint firstItem="CmS-iF-egv" firstAttribute="leading" secondItem="JZE-G5-IyQ" secondAttribute="leading" constant="24" id="jll-Xo-Qzt"/>
                                             <constraint firstItem="Ox2-Ok-daU" firstAttribute="top" secondItem="Y1l-je-VIg" secondAttribute="bottom" constant="1.5" id="lus-6r-YTj"/>
                                             <constraint firstItem="ccp-9o-bNK" firstAttribute="top" secondItem="8cF-ja-XuD" secondAttribute="bottom" constant="2" id="mYc-DK-TnQ"/>
@@ -480,6 +489,7 @@
                         <outlet property="nameTextField" destination="LBt-5y-qng" id="GiV-TT-X4a"/>
                         <outlet property="passwordTextField" destination="Y1l-je-VIg" id="hm5-O6-GD2"/>
                         <outlet property="phoneTextField" destination="BvJ-Rf-49v" id="2OZ-kO-sMS"/>
+                        <outlet property="spinnerIndicator" destination="vcf-aZ-BPe" id="V3J-KL-V8u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2uM-xL-3zh" sceneMemberID="firstResponder"/>
@@ -520,7 +530,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="DvD-FS-McN">
             <objects>
-                <tabBarController id="C8D-kS-6FJ" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabbar" id="C8D-kS-6FJ" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nOl-yW-7TB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

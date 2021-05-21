@@ -56,8 +56,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         userViewModel.doLogin(parameters: parameters) { result, error  in
             self.startStopAnimation()
             if (result){
-                let homeVC = self.storyboard?.instantiateViewController(identifier: "home") as! HomeViewController
-                self.navigationController?.pushViewController(homeVC, animated: true)
+                let homeVC = self.storyboard?.instantiateViewController(identifier: "home")
+                self.navigationController?.pushViewController(homeVC!, animated: true)
             }else{
                 self.exibeErro(self.errormsgcredenciaisLabel, false)
             }

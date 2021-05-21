@@ -23,5 +23,6 @@ struct UserModel : Codable {
         /*case dateCreation = "createdAt"
         case dateUpdate = "updatedAt"*/
     }
+    
 }
 

@@ -15,9 +15,6 @@ class UserViewModel {
     
     let headers = ["Content-Type" : "application/json"]
     
-
-    
-    // MARK: Methods
     
     func doLogin(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){
         network.performRequest(type: LoginResult.self, path: api.returnEndpoint(endpoint: .login), method: .post, headers : headers, parameters: parameters) { [self] result, error in

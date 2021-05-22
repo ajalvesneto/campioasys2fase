@@ -37,7 +37,7 @@ class HomeViewController: UIViewController {
         print("implementar historico")
     }
     @IBAction func profissionais(_ sender: Any) {
-        print("implementar profissionais")
+        tabBarController?.selectedIndex = 1
     }
     
     func configureCardsViews(_ view : UIView){

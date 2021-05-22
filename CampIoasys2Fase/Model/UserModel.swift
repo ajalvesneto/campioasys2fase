@@ -9,7 +9,8 @@ import Foundation
 
 struct UserModel : Codable {
     let id : String
-    let name : String
+    let firstname : String
+    let lastname : String
     let email : String
    /* let isAdmin : Bool
     let dateCreation : String
@@ -19,9 +20,9 @@ struct UserModel : Codable {
     
     
     enum CodingKeys : String, CodingKey {
-        case id, name, email //, /*isAdmin,*/ isDeleted
-        /*case dateCreation = "createdAt"
-        case dateUpdate = "updatedAt"*/
+        case id, email
+        case firstname = "firstName"
+        case lastname = "lastName"
     }
     
 }

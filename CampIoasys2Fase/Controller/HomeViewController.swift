@@ -14,8 +14,14 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var profissionaisView: UIView!
     @IBOutlet weak var historicoView: UIView!
     
+    @IBOutlet weak var boasvindasLabel: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        boasvindasLabel.text = "Olá, \(UserDefaults.standard.string(forKey: "name") ??  "")"
+        
         configureCardsViews(comofuncionaView)
         configureCardsViews(profissionaisView)
         configureCardsViews(historicoView)
@@ -24,11 +30,14 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func comofunciona(_ sender: Any) {
+        print("implementar como funciona")
     }
     
     @IBAction func historico(_ sender: Any) {
+        print("implementar historico")
     }
     @IBAction func profissionais(_ sender: Any) {
+        print("implementar profissionais")
     }
     
     func configureCardsViews(_ view : UIView){

@@ -22,6 +22,8 @@ class UserViewModel {
             if let error = error {
                 completion(false, error.localizedDescription)
             }else{
+                UserDefaults.standard.set(result?.token, forKey: "token")
+                UserDefaults.standard.set(result?.user?.name, forKey: "name")
                 completion(true, nil)
             }
             

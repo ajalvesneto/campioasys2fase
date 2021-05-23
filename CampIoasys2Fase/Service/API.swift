@@ -24,7 +24,7 @@ class API {
     
     enum Endpoints : String {
         case login = "auth/signin"
-        case listUsers = "users/"
+        case listProfessionals = "professionals/"
         case register = "auth/signup"
     }
     

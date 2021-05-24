@@ -13,6 +13,7 @@ class RegisterScrollViewController: UIViewController, UITextFieldDelegate {
     // MARK: IOBOutlets
     
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var sobrenomeTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -33,6 +34,7 @@ class RegisterScrollViewController: UIViewController, UITextFieldDelegate {
         emailTextField.delegate = self
         passwordTextField.delegate = self
         confirmpasswordTextField.delegate = self
+        sobrenomeTextField.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -51,7 +53,7 @@ class RegisterScrollViewController: UIViewController, UITextFieldDelegate {
     //MARK: IBActions
     @IBAction func registerButton(_ sender: Any) {
         
-        if (passwordTextField.text!.count) < 8 {
+        /*if (passwordTextField.text!.count) < 8 {
             exibeErro(errorLenghtPasswordLabel, false)
             
             return
@@ -61,9 +63,13 @@ class RegisterScrollViewController: UIViewController, UITextFieldDelegate {
             exibeErro(errorDifferentPasswordLabel, false)
             
             return
-        }
+        }*/
         
-        let parameters = ["name" : "\(nameTextField.text!)" , "email": "\(emailTextField.text!)", "password": "\(passwordTextField.text!)", "telephone" : "\(phoneTextField.text!)"]
+        //let parameters = ["firstName" : "\(nameTextField.text!)" , "lastName" : "\(sobrenomeTextField.text!)" , "email": "\(emailTextField.text!)", "password": "\(passwordTextField.text!)", "telephone" : "\(phoneTextField.text!)"]
+        
+        let parameters = ["firstName" : "teste" , "lastName" : "teste" , "email": "teste@teste.com", "password": "testeteste123", "telephone" : "7999999"]
+        
+        print(parameters)
         
         startStopAnimation()
         
@@ -74,6 +80,7 @@ class RegisterScrollViewController: UIViewController, UITextFieldDelegate {
                 let successVC = self.storyboard?.instantiateViewController(identifier: "success") as! SuccessViewController
                 self.navigationController?.pushViewController(successVC, animated: true)
             }else{
+                print(error)
                 self.exibeAlerta()
             }
         }

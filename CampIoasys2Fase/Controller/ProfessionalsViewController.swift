@@ -50,10 +50,14 @@ extension ProfessionalsViewController : UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ProfessionalsCollectionViewCell
         
+        cell.layer.borderWidth = 2
+        cell.layer.borderColor = UIColor(red: 0.44, green: 0.00, blue: 1.00, alpha: 1.00).cgColor
+        cell.layer.cornerRadius = 10
+        
         cell.nameLabel.text = professionals.professionals[indexPath.row].firstname + " " + professionals.professionals[indexPath.row].lastname
-        cell.codLabel.text = professionals.professionals[indexPath.row].crp
-        cell.phoneLabel.text = "87897545"//professionals.professionals[indexPath.row].
-        cell.locationLabel.text = professionals.professionals[indexPath.row].city
+        cell.codLabel.text = "CRP: \(professionals.professionals[indexPath.row].crp)"
+        cell.phoneLabel.text = "Tel: 87897545"//professionals.professionals[indexPath.row].
+        cell.locationLabel.text = "Atendimento: \( professionals.professionals[indexPath.row].city)"
         
         // Configure the cell
         

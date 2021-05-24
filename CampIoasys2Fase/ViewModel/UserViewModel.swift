@@ -31,7 +31,7 @@ class UserViewModel {
     }
     
     func doRegister(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){
-        network.performRequest(type: LoginResult.self, path: api.returnEndpoint(endpoint: .register), method: .post, headers : headers, parameters: parameters) {  result, error in
+        network.performRequest(type: RegisterResult.self, path: api.returnEndpoint(endpoint: .register), method: .post, headers : headers, parameters: parameters) {  result, error in
             
             if let error = error {
                 completion(false, error.localizedDescription)

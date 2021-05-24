@@ -12,6 +12,7 @@ struct UserModel : Codable {
     let firstname : String
     let lastname : String
     let email : String
+    let telephone : String
    /* let isAdmin : Bool
     let dateCreation : String
     let dateUpdate : String*/
@@ -20,7 +21,7 @@ struct UserModel : Codable {
     
     
     enum CodingKeys : String, CodingKey {
-        case id, email
+        case id, email, telephone
         case firstname = "firstName"
         case lastname = "lastName"
     }

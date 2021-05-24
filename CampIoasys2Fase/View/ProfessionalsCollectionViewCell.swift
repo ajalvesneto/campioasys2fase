@@ -14,4 +14,5 @@ class ProfessionalsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var codLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var locationLabel: UILabel!
+    
 }

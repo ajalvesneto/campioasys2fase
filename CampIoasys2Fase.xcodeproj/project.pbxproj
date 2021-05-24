@@ -10,6 +10,7 @@
 		191BE26B265711AC00BFC029 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191BE26A265711AC00BFC029 /* SuccessViewController.swift */; };
 		19479AD52659665100913A34 /* ProfessionalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19479AD42659665100913A34 /* ProfessionalsViewController.swift */; };
 		19479AD726596B7600913A34 /* ProfessionalsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19479AD626596B7600913A34 /* ProfessionalsCollectionViewCell.swift */; };
+		194841D9265C0BA200B287EB /* RegisterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194841D8265C0BA200B287EB /* RegisterResult.swift */; };
 		19546BA52655CC66003B894A /* RegisterScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19546BA42655CC66003B894A /* RegisterScrollViewController.swift */; };
 		196A325C2659E97300C55F67 /* ProfessionalsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196A325B2659E97300C55F67 /* ProfessionalsResult.swift */; };
 		196A325E2659E9DE00C55F67 /* ProfessionalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196A325D2659E9DD00C55F67 /* ProfessionalModel.swift */; };
@@ -38,6 +39,7 @@
 		191BE26A265711AC00BFC029 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		19479AD42659665100913A34 /* ProfessionalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalsViewController.swift; sourceTree = "<group>"; };
 		19479AD626596B7600913A34 /* ProfessionalsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalsCollectionViewCell.swift; sourceTree = "<group>"; };
+		194841D8265C0BA200B287EB /* RegisterResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResult.swift; sourceTree = "<group>"; };
 		19546BA42655CC66003B894A /* RegisterScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScrollViewController.swift; sourceTree = "<group>"; };
 		196A325B2659E97300C55F67 /* ProfessionalsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalsResult.swift; sourceTree = "<group>"; };
 		196A325D2659E9DD00C55F67 /* ProfessionalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalModel.swift; sourceTree = "<group>"; };
@@ -78,6 +80,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1975A545265A904700C8795E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		19A074092653EFA6001C55B8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +128,7 @@
 		19FD5619264C842E0022CEB7 /* CampIoasys2Fase */ = {
 			isa = PBXGroup;
 			children = (
+				1975A545265A904700C8795E /* Extensions */,
 				19A074092653EFA6001C55B8 /* Resources */,
 				19FD5634264C868A0022CEB7 /* Service */,
 				19FD5632264C86780022CEB7 /* Network */,
@@ -141,6 +151,7 @@
 				19C744202656E365004EF239 /* LoginResult.swift */,
 				196A325B2659E97300C55F67 /* ProfessionalsResult.swift */,
 				196A325D2659E9DD00C55F67 /* ProfessionalModel.swift */,
+				194841D8265C0BA200B287EB /* RegisterResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,6 +360,7 @@
 				19FD561F264C842E0022CEB7 /* LoginViewController.swift in Sources */,
 				19F9F0212651759D00333079 /* UserModel.swift in Sources */,
 				19546BA52655CC66003B894A /* RegisterScrollViewController.swift in Sources */,
+				194841D9265C0BA200B287EB /* RegisterResult.swift in Sources */,
 				19F9F0272651DBE200333079 /* HTTPMethod.swift in Sources */,
 				19F9F0252651DBBF00333079 /* Network.swift in Sources */,
 				19C7441726568C37004EF239 /* HomeViewController.swift in Sources */,

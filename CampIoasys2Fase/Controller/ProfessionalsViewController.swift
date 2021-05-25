@@ -1,81 +1,70 @@
 //
-//  ProfessionalsCollectionViewController.swift
+//  ProfessionalsViewController2.swift
 //  CampIoasys2Fase
 //
-//  Created by Antonio Alves on 22/05/21.
+//  Created by Antonio Alves on 24/05/21.
 //
 
+import Foundation
 import UIKit
 
-
-class ProfessionalsViewController: UIViewController{
+class ProfessionalsViewController : UIViewController {
     
-    let reuseIdentifier = "cell"
+    @IBOutlet weak var professionalsTableView: UITableView!
+    
     var professionals = ProfessionalViewModel(){
         didSet {
-            profissionaisCollectionView.reloadData()
+            professionalsTableView.reloadData()
         }
     }
     
-    
-    
-    @IBOutlet weak var profissionaisCollectionView: UICollectionView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        professionalsTableView.dataSource = self
+        professionalsTableView.delegate = self
         list()
-        profissionaisCollectionView.delegate = self
-        profissionaisCollectionView.dataSource = self
-        
     }
 }
 
-
-extension ProfessionalsViewController : UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    
-    // MARK: UICollectionViewDataSource
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+extension ProfessionalsViewController : UITableViewDelegate, UITableViewDataSource{
+   
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        professionals.professionals.count
     }
     
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return professionals.professionals.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ProfessionalsCollectionViewCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        let cell = professionalsTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProfessionalTableViewCell
+        
+        configureLayoutCell(cell)
+        
+        cell.nameLabel.text = professionals.professionals[indexPath.row].firstname + " " + professionals.professionals[indexPath.row].lastname
+        cell.codeLabel.text = "CRP: \(professionals.professionals[indexPath.row].crp)"
+        cell.phoneLabel.text = "Tel: 87897545"//professionals.professionals[indexPath.row].
+        cell.placeLabel.text = "Atendimento: \( professionals.professionals[indexPath.row].city)"
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+    }
+    
+    
+    func configureLayoutCell(_ cell :  ProfessionalTableViewCell){
         cell.layer.borderWidth = 2
         cell.layer.borderColor = UIColor(red: 0.44, green: 0.00, blue: 1.00, alpha: 1.00).cgColor
         cell.layer.cornerRadius = 10
-        
-        cell.nameLabel.text = professionals.professionals[indexPath.row].firstname + " " + professionals.professionals[indexPath.row].lastname
-        cell.codLabel.text = "CRP: \(professionals.professionals[indexPath.row].crp)"
-        cell.phoneLabel.text = "Tel: 87897545"//professionals.professionals[indexPath.row].
-        cell.locationLabel.text = "Atendimento: \( professionals.professionals[indexPath.row].city)"
-        
-        // Configure the cell
-        
-        return cell
     }
     
     func list(){
         professionals.doListProfessionals(nil) { result, error in
             if (result){
-                self.profissionaisCollectionView.reloadData()
+                self.professionalsTableView.reloadData()
             }
         }
         
     }
     
+    
 }
-
-
-
-
-

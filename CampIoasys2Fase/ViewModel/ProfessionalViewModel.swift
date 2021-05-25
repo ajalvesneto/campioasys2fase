@@ -19,6 +19,7 @@ class ProfessionalViewModel {
     let headers = ["Content-Type" : "application/json", "authorization" : "Bearer \(UserDefaults.standard.string(forKey: "token") ?? "")" ]
     
    
+    // MARK: Methods
     func doListProfessionals(_ parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){
         network.performRequest(type: ProfessionalResult.self, path: api.returnEndpoint(endpoint: .listProfessionals), method: .get, headers : headers) {  result, error in
             if let error = error {

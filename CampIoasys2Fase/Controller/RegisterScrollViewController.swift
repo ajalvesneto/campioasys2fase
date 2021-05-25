@@ -53,7 +53,7 @@ class RegisterScrollViewController: UIViewController, UITextFieldDelegate {
     //MARK: IBActions
     @IBAction func registerButton(_ sender: Any) {
         
-        /*if (passwordTextField.text!.count) < 8 {
+        if (passwordTextField.text!.count) < 8 {
             exibeErro(errorLenghtPasswordLabel, false)
             
             return
@@ -63,13 +63,9 @@ class RegisterScrollViewController: UIViewController, UITextFieldDelegate {
             exibeErro(errorDifferentPasswordLabel, false)
             
             return
-        }*/
+        }
         
-        //let parameters = ["firstName" : "\(nameTextField.text!)" , "lastName" : "\(sobrenomeTextField.text!)" , "email": "\(emailTextField.text!)", "password": "\(passwordTextField.text!)", "telephone" : "\(phoneTextField.text!)"]
-        
-        let parameters = ["firstName" : "teste" , "lastName" : "teste" , "email": "teste@teste.com", "password": "testeteste123", "telephone" : "7999999"]
-        
-        print(parameters)
+        let parameters = ["firstName" : "\(nameTextField.text!)" , "lastName" : "\(sobrenomeTextField.text!)" , "email": "\(emailTextField.text!)", "password": "\(passwordTextField.text!)", "telephone" : "\(phoneTextField.text!)"]
         
         startStopAnimation()
         
@@ -80,7 +76,6 @@ class RegisterScrollViewController: UIViewController, UITextFieldDelegate {
                 let successVC = self.storyboard?.instantiateViewController(identifier: "success") as! SuccessViewController
                 self.navigationController?.pushViewController(successVC, animated: true)
             }else{
-                print(error)
                 self.exibeAlerta()
             }
         }

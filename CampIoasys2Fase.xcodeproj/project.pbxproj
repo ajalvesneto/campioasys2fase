@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		191BE26B265711AC00BFC029 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191BE26A265711AC00BFC029 /* SuccessViewController.swift */; };
-		19479AD52659665100913A34 /* ProfessionalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19479AD42659665100913A34 /* ProfessionalsViewController.swift */; };
-		19479AD726596B7600913A34 /* ProfessionalsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19479AD626596B7600913A34 /* ProfessionalsCollectionViewCell.swift */; };
+		19208A71265D2276007AA552 /* ProfessionalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19208A70265D2276007AA552 /* ProfessionalTableViewCell.swift */; };
+		19208A73265D3C8D007AA552 /* ComoFuncionaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19208A72265D3C8D007AA552 /* ComoFuncionaViewController.swift */; };
 		194841D9265C0BA200B287EB /* RegisterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194841D8265C0BA200B287EB /* RegisterResult.swift */; };
 		19546BA52655CC66003B894A /* RegisterScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19546BA42655CC66003B894A /* RegisterScrollViewController.swift */; };
-		196A325C2659E97300C55F67 /* ProfessionalsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196A325B2659E97300C55F67 /* ProfessionalsResult.swift */; };
+		196A325C2659E97300C55F67 /* ProfessionalResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196A325B2659E97300C55F67 /* ProfessionalResult.swift */; };
 		196A325E2659E9DE00C55F67 /* ProfessionalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196A325D2659E9DD00C55F67 /* ProfessionalModel.swift */; };
 		196A32602659EB4A00C55F67 /* ProfessionalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196A325F2659EB4A00C55F67 /* ProfessionalViewModel.swift */; };
+		19711A80265C387200130F14 /* ProfessionalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19711A7F265C387200130F14 /* ProfessionalsViewController.swift */; };
 		1991D3092652AFFE00E0200F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1991D3082652AFFE00E0200F /* API.swift */; };
 		19A0740B2653F06C001C55B8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0740A2653F06B001C55B8 /* logo.png */; };
 		19A0740E26540073001C55B8 /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = 19A0740D26540073001C55B8 /* Lato */; };
@@ -37,13 +38,14 @@
 
 /* Begin PBXFileReference section */
 		191BE26A265711AC00BFC029 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
-		19479AD42659665100913A34 /* ProfessionalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalsViewController.swift; sourceTree = "<group>"; };
-		19479AD626596B7600913A34 /* ProfessionalsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalsCollectionViewCell.swift; sourceTree = "<group>"; };
+		19208A70265D2276007AA552 /* ProfessionalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalTableViewCell.swift; sourceTree = "<group>"; };
+		19208A72265D3C8D007AA552 /* ComoFuncionaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComoFuncionaViewController.swift; sourceTree = "<group>"; };
 		194841D8265C0BA200B287EB /* RegisterResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResult.swift; sourceTree = "<group>"; };
 		19546BA42655CC66003B894A /* RegisterScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScrollViewController.swift; sourceTree = "<group>"; };
-		196A325B2659E97300C55F67 /* ProfessionalsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalsResult.swift; sourceTree = "<group>"; };
+		196A325B2659E97300C55F67 /* ProfessionalResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalResult.swift; sourceTree = "<group>"; };
 		196A325D2659E9DD00C55F67 /* ProfessionalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalModel.swift; sourceTree = "<group>"; };
 		196A325F2659EB4A00C55F67 /* ProfessionalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalViewModel.swift; sourceTree = "<group>"; };
+		19711A7F265C387200130F14 /* ProfessionalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalsViewController.swift; sourceTree = "<group>"; };
 		1991D3082652AFFE00E0200F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		19A0740A2653F06B001C55B8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Assets.xcassets/logo.png; sourceTree = "<group>"; };
 		19A0740D26540073001C55B8 /* Lato */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = Lato; path = CampIoasys2Fase/Resources/Fonts/Lato; sourceTree = SOURCE_ROOT; };
@@ -149,9 +151,9 @@
 			children = (
 				19F9F0202651759D00333079 /* UserModel.swift */,
 				19C744202656E365004EF239 /* LoginResult.swift */,
-				196A325B2659E97300C55F67 /* ProfessionalsResult.swift */,
-				196A325D2659E9DD00C55F67 /* ProfessionalModel.swift */,
 				194841D8265C0BA200B287EB /* RegisterResult.swift */,
+				196A325B2659E97300C55F67 /* ProfessionalResult.swift */,
+				196A325D2659E9DD00C55F67 /* ProfessionalModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,7 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				19FD5620264C842E0022CEB7 /* Main.storyboard */,
-				19479AD626596B7600913A34 /* ProfessionalsCollectionViewCell.swift */,
+				19208A70265D2276007AA552 /* ProfessionalTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,7 +183,8 @@
 				19546BA42655CC66003B894A /* RegisterScrollViewController.swift */,
 				19C7441626568C37004EF239 /* HomeViewController.swift */,
 				191BE26A265711AC00BFC029 /* SuccessViewController.swift */,
-				19479AD42659665100913A34 /* ProfessionalsViewController.swift */,
+				19711A7F265C387200130F14 /* ProfessionalsViewController.swift */,
+				19208A72265D3C8D007AA552 /* ComoFuncionaViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -361,17 +364,18 @@
 				19F9F0212651759D00333079 /* UserModel.swift in Sources */,
 				19546BA52655CC66003B894A /* RegisterScrollViewController.swift in Sources */,
 				194841D9265C0BA200B287EB /* RegisterResult.swift in Sources */,
+				19208A73265D3C8D007AA552 /* ComoFuncionaViewController.swift in Sources */,
 				19F9F0272651DBE200333079 /* HTTPMethod.swift in Sources */,
 				19F9F0252651DBBF00333079 /* Network.swift in Sources */,
+				19208A71265D2276007AA552 /* ProfessionalTableViewCell.swift in Sources */,
 				19C7441726568C37004EF239 /* HomeViewController.swift in Sources */,
+				19711A80265C387200130F14 /* ProfessionalsViewController.swift in Sources */,
 				19C744212656E365004EF239 /* LoginResult.swift in Sources */,
-				196A325C2659E97300C55F67 /* ProfessionalsResult.swift in Sources */,
+				196A325C2659E97300C55F67 /* ProfessionalResult.swift in Sources */,
 				196A325E2659E9DE00C55F67 /* ProfessionalModel.swift in Sources */,
 				19FD561B264C842E0022CEB7 /* AppDelegate.swift in Sources */,
 				196A32602659EB4A00C55F67 /* ProfessionalViewModel.swift in Sources */,
 				19F9F023265175B500333079 /* UserViewModel.swift in Sources */,
-				19479AD726596B7600913A34 /* ProfessionalsCollectionViewCell.swift in Sources */,
-				19479AD52659665100913A34 /* ProfessionalsViewController.swift in Sources */,
 				1991D3092652AFFE00E0200F /* API.swift in Sources */,
 				191BE26B265711AC00BFC029 /* SuccessViewController.swift in Sources */,
 				19FD561D264C842E0022CEB7 /* SceneDelegate.swift in Sources */,

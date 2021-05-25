@@ -30,14 +30,18 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func comofunciona(_ sender: Any) {
-        print("implementar como funciona")
+        tabBarController?.selectedIndex = 3
     }
     
     @IBAction func historico(_ sender: Any) {
-        print("implementar historico")
+        tabBarController?.selectedIndex = 2
     }
     @IBAction func profissionais(_ sender: Any) {
         tabBarController?.selectedIndex = 1
+    }
+    @IBAction func perfil(_ sender: Any) {
+        tabBarController?.selectedIndex = 4
+        
     }
     
     func configureCardsViews(_ view : UIView){

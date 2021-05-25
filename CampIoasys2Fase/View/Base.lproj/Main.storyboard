@@ -885,7 +885,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iR1-3E-LL5">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="897"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1026"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Aa-mA-RFa">
                                                 <rect key="frame" x="27" y="78" width="86" height="24"/>
@@ -905,13 +905,13 @@
                                                 </constraints>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOS-aC-dCi">
-                                                <rect key="frame" x="24" y="498" width="363" height="399"/>
+                                                <rect key="frame" x="24" y="498" width="363" height="528"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCi-4h-ip7">
                                                         <rect key="frame" x="16" y="8" width="331" height="382"/>
                                                         <string key="text">Nosso objetivo é criar um ambiente para que todas as pessoas possam se sentir seguras ao procurarem uma consulta. Todos os profissionais listados aqui passam por aprovação e cada nova avaliação é levada em consideração. Somos um time diverso que busca sempre entregar uma solução de valor para nossos usuários! Se você conhece algum profissional que compactua com nossos valores, não se esqueça de compartilhar a consul.t. Espalhe essa ideia para que possamos ter cada vez mais aliados!
 </string>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -919,6 +919,7 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="dCi-4h-ip7" secondAttribute="trailing" constant="16" id="5NF-Nc-PPa"/>
+                                                    <constraint firstAttribute="height" constant="528" id="WZd-SO-nHf"/>
                                                     <constraint firstItem="dCi-4h-ip7" firstAttribute="leading" secondItem="WOS-aC-dCi" secondAttribute="leading" constant="16" id="eES-hb-yoh"/>
                                                     <constraint firstItem="dCi-4h-ip7" firstAttribute="top" secondItem="WOS-aC-dCi" secondAttribute="top" constant="8" id="jPq-yo-UJ3"/>
                                                 </constraints>
@@ -973,6 +974,7 @@
                     <navigationItem key="navigationItem" id="e6N-v7-HaT"/>
                     <size key="freeformSize" width="414" height="896"/>
                     <connections>
+                        <outlet property="comofuncionaLabel" destination="dCi-4h-ip7" id="pBs-FV-CSN"/>
                         <outlet property="textView" destination="WOS-aC-dCi" id="GXU-hO-cHt"/>
                     </connections>
                 </viewController>

@@ -12,6 +12,8 @@ class ProfessionalsViewController : UIViewController {
     
     @IBOutlet weak var professionalsTableView: UITableView!
     
+   
+    
     var professionals = ProfessionalViewModel(){
         didSet {
             professionalsTableView.reloadData()
@@ -36,7 +38,7 @@ extension ProfessionalsViewController : UITableViewDelegate, UITableViewDataSour
         
         let cell = professionalsTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProfessionalTableViewCell
         
-        configureLayoutCell(cell)
+        configureLayoutCell(cell.professionalView)
         
         cell.nameLabel.text = professionals.professionals[indexPath.row].firstname + " " + professionals.professionals[indexPath.row].lastname
         cell.codeLabel.text = "CRP: \(professionals.professionals[indexPath.row].crp)"
@@ -47,14 +49,16 @@ extension ProfessionalsViewController : UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
+        let detailsVC = self.storyboard?.instantiateViewController(identifier: "details") as! DetailsViewController
+        detailsVC.professionalViewModel.professionals.append( professionals.professionals[indexPath.row])
+        self.navigationController?.pushViewController(detailsVC, animated: true)
     }
     
     
-    func configureLayoutCell(_ cell :  ProfessionalTableViewCell){
-        cell.layer.borderWidth = 2
-        cell.layer.borderColor = UIColor(red: 0.44, green: 0.00, blue: 1.00, alpha: 1.00).cgColor
-        cell.layer.cornerRadius = 10
+    func configureLayoutCell(_ view :  UIView){
+        view.layer.borderWidth = 2
+        view.layer.borderColor = UIColor(red: 0.44, green: 0.00, blue: 1.00, alpha: 1.00).cgColor
+        view.layer.cornerRadius = 10
     }
     
     func list(){

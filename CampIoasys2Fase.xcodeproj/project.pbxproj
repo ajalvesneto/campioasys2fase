@@ -10,6 +10,7 @@
 		191BE26B265711AC00BFC029 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191BE26A265711AC00BFC029 /* SuccessViewController.swift */; };
 		19208A71265D2276007AA552 /* ProfessionalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19208A70265D2276007AA552 /* ProfessionalTableViewCell.swift */; };
 		19208A73265D3C8D007AA552 /* ComoFuncionaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19208A72265D3C8D007AA552 /* ComoFuncionaViewController.swift */; };
+		19208A75265D6DE4007AA552 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19208A74265D6DE4007AA552 /* DetailsViewController.swift */; };
 		194841D9265C0BA200B287EB /* RegisterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194841D8265C0BA200B287EB /* RegisterResult.swift */; };
 		19546BA52655CC66003B894A /* RegisterScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19546BA42655CC66003B894A /* RegisterScrollViewController.swift */; };
 		196A325C2659E97300C55F67 /* ProfessionalResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196A325B2659E97300C55F67 /* ProfessionalResult.swift */; };
@@ -40,6 +41,7 @@
 		191BE26A265711AC00BFC029 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		19208A70265D2276007AA552 /* ProfessionalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalTableViewCell.swift; sourceTree = "<group>"; };
 		19208A72265D3C8D007AA552 /* ComoFuncionaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComoFuncionaViewController.swift; sourceTree = "<group>"; };
+		19208A74265D6DE4007AA552 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		194841D8265C0BA200B287EB /* RegisterResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResult.swift; sourceTree = "<group>"; };
 		19546BA42655CC66003B894A /* RegisterScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScrollViewController.swift; sourceTree = "<group>"; };
 		196A325B2659E97300C55F67 /* ProfessionalResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalResult.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				191BE26A265711AC00BFC029 /* SuccessViewController.swift */,
 				19711A7F265C387200130F14 /* ProfessionalsViewController.swift */,
 				19208A72265D3C8D007AA552 /* ComoFuncionaViewController.swift */,
+				19208A74265D6DE4007AA552 /* DetailsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				1991D3092652AFFE00E0200F /* API.swift in Sources */,
 				191BE26B265711AC00BFC029 /* SuccessViewController.swift in Sources */,
 				19FD561D264C842E0022CEB7 /* SceneDelegate.swift in Sources */,
+				19208A75265D6DE4007AA552 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

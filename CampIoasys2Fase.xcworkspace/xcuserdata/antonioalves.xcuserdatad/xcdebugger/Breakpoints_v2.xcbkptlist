@@ -20,53 +20,5 @@
             landmarkType = "13">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D8307C0C-BE71-4038-83DA-EE02943055DF"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CampIoasys2Fase/Controller/RegisterScrollViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "registerButton(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D8307C0C-BE71-4038-83DA-EE02943055DF - 714a427208e489f3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CampIoasys2Fase.RegisterScrollViewController.registerButton(Any) -&gt; ()"
-                  moduleName = "CampIoasys2Fase"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/antonioalves/Documents/Camp%20Ios/CampIoasys2Fase/CampIoasys2Fase/Controller/RegisterScrollViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "73"
-                  endingLineNumber = "73"
-                  offsetFromSymbolStart = "6986">
-               </Location>
-               <Location
-                  uuid = "D8307C0C-BE71-4038-83DA-EE02943055DF - 8a126e480ff6f7c0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Any&gt;) -&gt; () in CampIoasys2Fase.RegisterScrollViewController.registerButton(Any) -&gt; ()"
-                  moduleName = "CampIoasys2Fase"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/antonioalves/Documents/Camp%20Ios/CampIoasys2Fase/CampIoasys2Fase/Controller/RegisterScrollViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "74"
-                  endingLineNumber = "74"
-                  offsetFromSymbolStart = "157">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

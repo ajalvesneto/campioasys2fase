@@ -22,9 +22,11 @@ class UserViewModel {
             if let error = error {
                 completion(false, error.localizedDescription)
             }else{
-                UserDefaults.standard.set(result?.token, forKey: "token")
-                UserDefaults.standard.set(result?.user?.firstname, forKey: "name")
-                completion(true, nil)
+                if let result = result {
+                    self.setUserDefaults(result)
+                    completion(true, nil)
+                }
+                
             }
             
         }
@@ -40,5 +42,16 @@ class UserViewModel {
             }
             
         }
+    }
+    
+    
+    
+    func setUserDefaults(_ result : LoginResult){
+        UserDefaults.standard.set(result.token, forKey: "token")
+        UserDefaults.standard.set(result.user?.id, forKey: "id")
+        UserDefaults.standard.set(result.user?.firstname, forKey: "firstname")
+        UserDefaults.standard.set(result.user?.lastname, forKey: "lastname")
+        UserDefaults.standard.set(result.user?.email, forKey: "email")
+        UserDefaults.standard.set(result.user?.telephone, forKey: "telephone")
     }
 }

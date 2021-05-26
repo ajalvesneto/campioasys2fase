@@ -13,7 +13,7 @@ class ProfessionalTableViewCell: UITableViewCell {
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var codeLabel: UILabel!
-    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var placeLabel: UILabel!
     @IBOutlet weak var professionalView: UIView!
     

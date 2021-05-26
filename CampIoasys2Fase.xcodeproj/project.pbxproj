@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19123923265E81EC00A77915 /* ConsultResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19123922265E81EC00A77915 /* ConsultResult.swift */; };
 		191BE26B265711AC00BFC029 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191BE26A265711AC00BFC029 /* SuccessViewController.swift */; };
 		19208A71265D2276007AA552 /* ProfessionalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19208A70265D2276007AA552 /* ProfessionalTableViewCell.swift */; };
 		19208A73265D3C8D007AA552 /* ComoFuncionaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19208A72265D3C8D007AA552 /* ComoFuncionaViewController.swift */; };
 		19208A75265D6DE4007AA552 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19208A74265D6DE4007AA552 /* DetailsViewController.swift */; };
+		19405C86265E86EA00D05F4A /* ConsultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19405C85265E86EA00D05F4A /* ConsultViewModel.swift */; };
 		194841D9265C0BA200B287EB /* RegisterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194841D8265C0BA200B287EB /* RegisterResult.swift */; };
 		19546BA52655CC66003B894A /* RegisterScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19546BA42655CC66003B894A /* RegisterScrollViewController.swift */; };
 		196A325C2659E97300C55F67 /* ProfessionalResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196A325B2659E97300C55F67 /* ProfessionalResult.swift */; };
@@ -38,10 +40,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19123922265E81EC00A77915 /* ConsultResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultResult.swift; sourceTree = "<group>"; };
 		191BE26A265711AC00BFC029 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		19208A70265D2276007AA552 /* ProfessionalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalTableViewCell.swift; sourceTree = "<group>"; };
 		19208A72265D3C8D007AA552 /* ComoFuncionaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComoFuncionaViewController.swift; sourceTree = "<group>"; };
 		19208A74265D6DE4007AA552 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		19405C85265E86EA00D05F4A /* ConsultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultViewModel.swift; sourceTree = "<group>"; };
 		194841D8265C0BA200B287EB /* RegisterResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResult.swift; sourceTree = "<group>"; };
 		19546BA42655CC66003B894A /* RegisterScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScrollViewController.swift; sourceTree = "<group>"; };
 		196A325B2659E97300C55F67 /* ProfessionalResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalResult.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				194841D8265C0BA200B287EB /* RegisterResult.swift */,
 				196A325B2659E97300C55F67 /* ProfessionalResult.swift */,
 				196A325D2659E9DD00C55F67 /* ProfessionalModel.swift */,
+				19123922265E81EC00A77915 /* ConsultResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 			children = (
 				19F9F022265175B500333079 /* UserViewModel.swift */,
 				196A325F2659EB4A00C55F67 /* ProfessionalViewModel.swift */,
+				19405C85265E86EA00D05F4A /* ConsultViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -373,10 +379,12 @@
 				19208A71265D2276007AA552 /* ProfessionalTableViewCell.swift in Sources */,
 				19C7441726568C37004EF239 /* HomeViewController.swift in Sources */,
 				19711A80265C387200130F14 /* ProfessionalsViewController.swift in Sources */,
+				19123923265E81EC00A77915 /* ConsultResult.swift in Sources */,
 				19C744212656E365004EF239 /* LoginResult.swift in Sources */,
 				196A325C2659E97300C55F67 /* ProfessionalResult.swift in Sources */,
 				196A325E2659E9DE00C55F67 /* ProfessionalModel.swift in Sources */,
 				19FD561B264C842E0022CEB7 /* AppDelegate.swift in Sources */,
+				19405C86265E86EA00D05F4A /* ConsultViewModel.swift in Sources */,
 				196A32602659EB4A00C55F67 /* ProfessionalViewModel.swift in Sources */,
 				19F9F023265175B500333079 /* UserViewModel.swift in Sources */,
 				1991D3092652AFFE00E0200F /* API.swift in Sources */,

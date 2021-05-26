@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        boasvindasLabel.text = "Olá, \(UserDefaults.standard.string(forKey: "name") ??  "")"
+        boasvindasLabel.text = "Olá, \(UserDefaults.standard.string(forKey: "firstname") ??  "")"
         
         configureCardsViews(comofuncionaView)
         configureCardsViews(profissionaisView)

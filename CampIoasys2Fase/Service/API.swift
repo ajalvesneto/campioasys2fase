@@ -26,6 +26,7 @@ class API {
         case login = "auth/signin"
         case listProfessionals = "professionals/"
         case register = "auth/signup"
+        case registerConsult = "users/"
     }
     
 }

@@ -10,9 +10,10 @@ import UIKit
 
 class ProfessionalsViewController : UIViewController {
     
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var professionalsTableView: UITableView!
     
-   
+    
     
     var professionals = ProfessionalViewModel(){
         didSet {
@@ -29,21 +30,30 @@ class ProfessionalsViewController : UIViewController {
 }
 
 extension ProfessionalsViewController : UITableViewDelegate, UITableViewDataSource{
-   
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         professionals.professionals.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        let professional = professionals.professionals[indexPath.row]
         let cell = professionalsTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ProfessionalTableViewCell
-        
         configureLayoutCell(cell.professionalView)
         
-        cell.nameLabel.text = professionals.professionals[indexPath.row].firstname + " " + professionals.professionals[indexPath.row].lastname
-        cell.codeLabel.text = "CRP: \(professionals.professionals[indexPath.row].crp)"
-        cell.phoneLabel.text = "Tel: 87897545"//professionals.professionals[indexPath.row].
-        cell.placeLabel.text = "Atendimento: \( professionals.professionals[indexPath.row].city)"
+        var remotely = ""
+        if (professional.remotely){
+            remotely = "Remoto / "
+        }
+        
+        
+        
+        
+        
+        cell.nameLabel.text = professional.firstname + " " + professionals.professionals[indexPath.row].lastname
+        cell.codeLabel.text = "CRP: \(professional.crp)"
+        cell.emailLabel.text = professional.email
+        cell.placeLabel.text = "Atendimento: \(remotely)\(professional.city)"
         
         return cell
     }
@@ -62,12 +72,23 @@ extension ProfessionalsViewController : UITableViewDelegate, UITableViewDataSour
     }
     
     func list(){
+        startStopAnimation()
         professionals.doListProfessionals(nil) { result, error in
+            self.startStopAnimation()
             if (result){
                 self.professionalsTableView.reloadData()
             }
         }
         
+    }
+    
+    func startStopAnimation(){
+        if (spinner.isHidden){
+            spinner.isHidden = false
+            spinner.startAnimating()
+        }else{
+            spinner.stopAnimating()
+        }
     }
     
     

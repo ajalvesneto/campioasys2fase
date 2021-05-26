@@ -672,7 +672,8 @@
                     <connections>
                         <segue destination="pVn-z6-Rfo" kind="relationship" relationship="viewControllers" id="pEf-hO-XDn"/>
                         <segue destination="Nf9-SY-lur" kind="relationship" relationship="viewControllers" id="nSW-X6-0nJ"/>
-                        <segue destination="D0W-ym-8Sp" kind="relationship" relationship="viewControllers" id="4Qr-hH-2tq"/>
+                        <segue destination="gHX-ZQ-Frz" kind="relationship" relationship="viewControllers" id="miZ-LL-K2e"/>
+                        <segue destination="SBm-ZP-zsT" kind="relationship" relationship="viewControllers" id="4pp-GG-JVY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ws5-BI-aVa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -794,7 +795,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Atendimento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31q-pX-7wS">
-                                                            <rect key="frame" x="27" y="124" width="292" height="43"/>
+                                                            <rect key="frame" x="27" y="124" width="97.5" height="43"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -828,7 +829,7 @@
                                                         <constraint firstItem="31q-pX-7wS" firstAttribute="top" secondItem="K6Z-ud-2wb" secondAttribute="bottom" constant="5" id="Wm5-jV-yHK"/>
                                                         <constraint firstItem="31q-pX-7wS" firstAttribute="leading" secondItem="kyp-jb-WyY" secondAttribute="leading" constant="27" id="f9R-2s-Let"/>
                                                         <constraint firstAttribute="trailing" secondItem="Cns-iy-e1s" secondAttribute="trailing" constant="10" id="nn3-Yv-kl7"/>
-                                                        <constraint firstAttribute="trailing" secondItem="31q-pX-7wS" secondAttribute="trailing" constant="27" id="pFD-ja-eZA"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="31q-pX-7wS" secondAttribute="trailing" constant="20" symbolic="YES" id="pFD-ja-eZA"/>
                                                         <constraint firstAttribute="height" constant="190" id="tb9-co-xnn"/>
                                                         <constraint firstItem="cOR-Ca-e9v" firstAttribute="leading" secondItem="K6Z-ud-2wb" secondAttribute="trailing" constant="16" id="zrA-Xy-2PD"/>
                                                     </constraints>
@@ -1008,7 +1009,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="99Q-dv-gW7"/>
                                     <constraint firstAttribute="width" constant="352" id="KQk-7o-81K"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="vDc-tc-629"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
                                 <state key="normal" title="Solicitar Consulta">
@@ -1071,33 +1071,21 @@
             </objects>
             <point key="canvasLocation" x="-1491.304347826087" y="2962.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="30B-yu-FsP">
             <objects>
                 <navigationController navigationBarHidden="YES" id="SBm-ZP-zsT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="aAQ-tq-i5p"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oVL-CN-Su6">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="ciu-9v-n0U" kind="relationship" relationship="rootViewController" id="oWb-EO-kqW"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o2C-mz-3r0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-403" y="1503"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="gvA-hh-EOd">
-            <objects>
-                <navigationController storyboardIdentifier="navPerfil" navigationBarHidden="YES" id="D0W-ym-8Sp" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="6oV-V1-JaT"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="afF-UR-FhT">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="gHX-ZQ-Frz" kind="relationship" relationship="rootViewController" id="GhX-h0-xmc"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YmZ-m8-JSC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="761" y="1525"/>
+            <point key="canvasLocation" x="154" y="1525"/>
         </scene>
         <!--Sobre-->
         <scene sceneID="YlS-RB-etR">
@@ -1193,7 +1181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7t-wz-Ogb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="759" y="2277"/>
+            <point key="canvasLocation" x="-658" y="1525"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NpF-dB-TIF">
@@ -1231,6 +1219,147 @@
             </objects>
             <point key="canvasLocation" x="-1491.304347826087" y="3630.8035714285711"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="xd7-gi-jf3">
+            <objects>
+                <viewController title="Profile" id="ciu-9v-n0U" customClass="ProfileViewController" customModule="CampIoasys2Fase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="liV-iS-zEv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Confira seus dados" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lh3-rA-V7n">
+                                <rect key="frame" x="21" y="144" width="373" height="43.5"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="jw8-CZ-Uz1">
+                                <rect key="frame" x="24" y="238.5" width="234" height="152"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Pgu-oR-bbt">
+                                <rect key="frame" x="28" y="420.5" width="356" height="235"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="TKC-Gx-5wp">
+                                        <rect key="frame" x="0.0" y="0.0" width="356" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b22-2P-bvb">
+                                                <rect key="frame" x="0.0" y="0.0" width="356" height="29"/>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joao" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zFt-ww-XGm">
+                                                <rect key="frame" x="0.0" y="41" width="356" height="24"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="nRe-42-rtr">
+                                        <rect key="frame" x="0.0" y="85" width="356" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koX-Cv-IE6">
+                                                <rect key="frame" x="0.0" y="0.0" width="356" height="29"/>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123132132" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amp-dX-pdf">
+                                                <rect key="frame" x="0.0" y="41" width="356" height="24"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="wMF-wK-DdX">
+                                        <rect key="frame" x="0.0" y="170" width="356" height="65"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKH-R4-2cz">
+                                                <rect key="frame" x="0.0" y="0.0" width="356" height="29"/>
+                                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="joao@joao.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5I-Wr-qwM">
+                                                <rect key="frame" x="0.0" y="41" width="356" height="24"/>
+                                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRd-7g-USC">
+                                <rect key="frame" x="24" y="720" width="154" height="45"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
+                                <state key="normal" title="Editar">
+                                    <color key="titleColor" red="0.42352941176470588" green="0.55294117647058827" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.42352941179999998" green="0.55294117649999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="edit:" destination="ciu-9v-n0U" eventType="touchUpInside" id="SdO-Dp-G8o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDf-Jy-xuR">
+                                <rect key="frame" x="235" y="720" width="154" height="44"/>
+                                <color key="backgroundColor" red="0.38431372549019605" green="0.87450980392156863" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
+                                <state key="normal" title="Tudo Certo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ok:" destination="ciu-9v-n0U" eventType="touchUpInside" id="Oq4-kT-4qf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xOt-6N-gtP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xOt-6N-gtP" firstAttribute="trailing" secondItem="XDf-Jy-xuR" secondAttribute="trailing" constant="25" id="1Iy-1g-SwZ"/>
+                            <constraint firstItem="Pgu-oR-bbt" firstAttribute="leading" secondItem="xOt-6N-gtP" secondAttribute="leading" constant="28" id="2Dg-9z-ecG"/>
+                            <constraint firstItem="wRd-7g-USC" firstAttribute="top" secondItem="Pgu-oR-bbt" secondAttribute="bottom" constant="64.5" id="694-16-UKg"/>
+                            <constraint firstItem="Lh3-rA-V7n" firstAttribute="leading" secondItem="xOt-6N-gtP" secondAttribute="leading" constant="21" id="81L-en-TkQ"/>
+                            <constraint firstItem="jw8-CZ-Uz1" firstAttribute="top" secondItem="Lh3-rA-V7n" secondAttribute="bottom" constant="51" id="HBf-Ct-wMZ"/>
+                            <constraint firstItem="Lh3-rA-V7n" firstAttribute="top" secondItem="xOt-6N-gtP" secondAttribute="top" constant="100" id="N6m-hQ-22S"/>
+                            <constraint firstItem="wRd-7g-USC" firstAttribute="leading" secondItem="xOt-6N-gtP" secondAttribute="leading" constant="24" id="NeF-2k-aeg"/>
+                            <constraint firstItem="Pgu-oR-bbt" firstAttribute="top" secondItem="jw8-CZ-Uz1" secondAttribute="bottom" constant="30" id="OFd-6L-vth"/>
+                            <constraint firstItem="xOt-6N-gtP" firstAttribute="trailing" secondItem="Lh3-rA-V7n" secondAttribute="trailing" constant="20" id="bsB-pp-Kh6"/>
+                            <constraint firstItem="XDf-Jy-xuR" firstAttribute="top" secondItem="Pgu-oR-bbt" secondAttribute="bottom" constant="64.5" id="hoP-cC-PHI"/>
+                            <constraint firstItem="jw8-CZ-Uz1" firstAttribute="leading" secondItem="xOt-6N-gtP" secondAttribute="leading" constant="24" id="j6W-fy-FfU"/>
+                            <constraint firstItem="xOt-6N-gtP" firstAttribute="trailing" secondItem="Pgu-oR-bbt" secondAttribute="trailing" constant="30" id="pEs-IL-CQ6"/>
+                            <constraint firstItem="xOt-6N-gtP" firstAttribute="trailing" secondItem="jw8-CZ-Uz1" secondAttribute="trailing" constant="156" id="qKL-2Z-rkd"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="person.circle" catalog="system" id="Zj4-Wj-Zap"/>
+                    <navigationItem key="navigationItem" id="FdI-oS-6k9"/>
+                    <connections>
+                        <outlet property="emailLabel" destination="u5I-Wr-qwM" id="uFz-mz-PSx"/>
+                        <outlet property="nameLabel" destination="zFt-ww-XGm" id="6UO-Km-ryi"/>
+                        <outlet property="phoneLabel" destination="amp-dX-pdf" id="Db0-hh-LUr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="saG-MF-yL0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153.62318840579712" y="2307.5892857142858"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="AYX-KT-re1"/>
@@ -1245,6 +1374,8 @@
         <image name="logo.png" width="261" height="66"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="perfil" width="36" height="36"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="profile" width="200" height="152"/>
         <image name="profissionais" width="132" height="118"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">

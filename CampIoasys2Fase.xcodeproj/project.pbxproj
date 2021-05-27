@@ -24,6 +24,7 @@
 		199F3574265FCA6200C1F981 /* ConsultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F3573265FCA6200C1F981 /* ConsultsViewController.swift */; };
 		199F3576265FCD0E00C1F981 /* ConsultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F3575265FCD0E00C1F981 /* ConsultTableViewCell.swift */; };
 		199F3579265FD04C00C1F981 /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F3578265FD04C00C1F981 /* Screens.swift */; };
+		199F357B265FDDE000C1F981 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F357A265FDDE000C1F981 /* EditProfileViewController.swift */; };
 		19A0740B2653F06C001C55B8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0740A2653F06B001C55B8 /* logo.png */; };
 		19A0740E26540073001C55B8 /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = 19A0740D26540073001C55B8 /* Lato */; };
 		19A07411265417FA001C55B8 /* background_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0740F265417FA001C55B8 /* background_splash.png */; };
@@ -61,6 +62,7 @@
 		199F3573265FCA6200C1F981 /* ConsultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultsViewController.swift; sourceTree = "<group>"; };
 		199F3575265FCD0E00C1F981 /* ConsultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultTableViewCell.swift; sourceTree = "<group>"; };
 		199F3578265FD04C00C1F981 /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
+		199F357A265FDDE000C1F981 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		19A0740A2653F06B001C55B8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Assets.xcassets/logo.png; sourceTree = "<group>"; };
 		19A0740D26540073001C55B8 /* Lato */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = Lato; path = CampIoasys2Fase/Resources/Fonts/Lato; sourceTree = SOURCE_ROOT; };
 		19A0740F265417FA001C55B8 /* background_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background_splash.png; path = Assets.xcassets/background_splash.png; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 				19208A74265D6DE4007AA552 /* DetailsViewController.swift */,
 				19405C87265EA17000D05F4A /* ProfileViewController.swift */,
 				199F3573265FCA6200C1F981 /* ConsultsViewController.swift */,
+				199F357A265FDDE000C1F981 /* EditProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				199F3579265FD04C00C1F981 /* Screens.swift in Sources */,
 				199F3576265FCD0E00C1F981 /* ConsultTableViewCell.swift in Sources */,
 				19208A75265D6DE4007AA552 /* DetailsViewController.swift in Sources */,
+				199F357B265FDDE000C1F981 /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

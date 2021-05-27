@@ -45,7 +45,8 @@ class DetailsViewController : UIViewController {
         }
         
         
-        aboutView.layer.cornerRadius = 10
+        aboutView.layer.cornerRadius = 48
+        aboutView.layer.maskedCorners = [.layerMaxXMaxYCorner,.layerMaxXMinYCorner,.layerMinXMaxYCorner]
        
     }
         

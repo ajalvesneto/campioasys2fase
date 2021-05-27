@@ -25,7 +25,7 @@ class Networking {
         
         if let params = parameters {
             do {
-                urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
+                urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: [])
             } catch let error {
                 completion(nil, error)
                 return

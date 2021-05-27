@@ -68,7 +68,7 @@ extension ProfessionalsViewController : UITableViewDelegate, UITableViewDataSour
     func configureLayoutCell(_ view :  UIView){
         view.layer.borderWidth = 2
         view.layer.borderColor = UIColor(red: 0.44, green: 0.00, blue: 1.00, alpha: 1.00).cgColor
-        view.layer.cornerRadius = 10
+        view.layer.cornerRadius = 24
     }
     
     func list(){

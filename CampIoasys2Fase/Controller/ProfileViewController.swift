@@ -22,6 +22,10 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        print("teste")
+    }
+    
     
     func configureView(){
         nameLabel.text = UserDefaults.standard.string(forKey: "firstname")! + " " + UserDefaults.standard.string(forKey: "lastname")!
@@ -31,11 +35,20 @@ class ProfileViewController: UIViewController {
     
     
     @IBAction func edit(_ sender: Any) {
+        let editVC = self.storyboard?.instantiateViewController(identifier: "edit") as! EditProfileViewController
+        self.navigationController?.pushViewController(editVC, animated: true)
+    
     }
     
     @IBAction func sair(_ sender: Any) {
-        print("sair")
         userViewModel.unsetUserDefaults()
+        let vc = self.storyboard?.instantiateViewController(identifier: "LoginStoryboard") as! LoginViewController
+        
+        vc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        //vc.modalPresentationStyle = .fullScreen
+        //self.present(vc, animated: true, completion: nil)
 
     
     }

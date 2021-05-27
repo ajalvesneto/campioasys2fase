@@ -44,6 +44,25 @@ class UserViewModel {
         }
     }
     
+    func doUpdate(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){
+        let path = api.returnEndpoint(endpoint: .registerConsult) + (UserDefaults.standard.string(forKey: "id") ??  "")
+        
+        let headers = ["Content-Type" : "application/json", "Authorization" : "Bearer \(UserDefaults.standard.string(forKey: "token") ?? "")"]
+        
+        network.performRequest(type: LoginResult.self, path: path, method: .patch, headers : headers, parameters: parameters) {  result, error in
+            
+            if let error = error {
+                completion(false, error.localizedDescription)
+            }else{
+                if let result = result {
+                    self.setUserDefaults(result)
+                    completion(true, nil)
+                }
+            }
+            
+        }
+    }
+    
     
     
     func setUserDefaults(_ result : LoginResult){

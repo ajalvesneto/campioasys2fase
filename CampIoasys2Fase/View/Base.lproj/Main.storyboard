@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ayr-BR-Ksz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C8D-kS-6FJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -1577,10 +1577,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Zt0-0Z-IBf">
-                                <rect key="frame" x="28" y="243.5" width="356" height="360"/>
+                                <rect key="frame" x="28" y="243.5" width="356" height="448"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="piy-4w-24K">
-                                        <rect key="frame" x="0.0" y="0.0" width="356" height="75"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="356" height="97"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHD-Ig-c3X">
                                                 <rect key="frame" x="0.0" y="0.0" width="356" height="29"/>
@@ -1589,8 +1589,11 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gKr-64-JBi">
-                                                <rect key="frame" x="0.0" y="41" width="356" height="34"/>
-                                                <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <rect key="frame" x="0.0" y="41" width="356" height="56"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="d29-GK-jRc"/>
+                                                </constraints>
                                                 <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1598,12 +1601,18 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                        <color key="value" systemColor="systemBlueColor"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="q7T-Kz-vbb">
-                                        <rect key="frame" x="0.0" y="95" width="356" height="75"/>
+                                        <rect key="frame" x="0.0" y="117" width="356" height="97"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sobrenome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uM-CJ-8iS">
                                                 <rect key="frame" x="0.0" y="0.0" width="356" height="29"/>
@@ -1611,32 +1620,44 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xd5-zZ-C4M">
-                                                <rect key="frame" x="0.0" y="41" width="356" height="34"/>
-                                                <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui seu sobrenome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xd5-zZ-C4M">
+                                                <rect key="frame" x="0.0" y="41" width="356" height="56"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="juk-2J-mPm"/>
+                                                </constraints>
                                                 <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                        <color key="value" systemColor="systemBlueColor"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="BRX-cO-aTa">
-                                        <rect key="frame" x="0.0" y="190" width="356" height="75"/>
+                                        <rect key="frame" x="0.0" y="234" width="356" height="97"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sobrenome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsH-Hy-EzA">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telefone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RsH-Hy-EzA">
                                                 <rect key="frame" x="0.0" y="0.0" width="356" height="29"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tRj-24-beI">
-                                                <rect key="frame" x="0.0" y="41" width="356" height="34"/>
-                                                <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui seu telefone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tRj-24-beI">
+                                                <rect key="frame" x="0.0" y="41" width="356" height="56"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="o7z-gt-lJi"/>
+                                                </constraints>
                                                 <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1644,28 +1665,43 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                        <color key="value" systemColor="systemBlueColor"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="SAP-if-RuS">
-                                        <rect key="frame" x="0.0" y="285" width="356" height="75"/>
+                                        <rect key="frame" x="0.0" y="351" width="356" height="97"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sobrenome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieo-6t-4aV">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieo-6t-4aV">
                                                 <rect key="frame" x="0.0" y="0.0" width="356" height="29"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui seu nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NVa-Rf-wlE">
-                                                <rect key="frame" x="0.0" y="41" width="356" height="34"/>
-                                                <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite aqui seu email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NVa-Rf-wlE">
+                                                <rect key="frame" x="0.0" y="41" width="356" height="56"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="56" id="yTV-9M-Bz2"/>
+                                                </constraints>
                                                 <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                        <color key="value" systemColor="systemBlueColor"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </textField>
@@ -1674,9 +1710,12 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gev-0X-zvA">
-                                <rect key="frame" x="85" y="646" width="143" height="41"/>
+                                <rect key="frame" x="29" y="734" width="154" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="iQY-o3-E3q"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
-                                <state key="normal" title="Sair da Conta">
+                                <state key="normal" title="Cancelar">
                                     <color key="titleColor" red="0.94509803920000002" green="0.61960784310000006" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1687,11 +1726,11 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
-                                        <color key="value" red="0.94509803920000002" green="0.61960784310000006" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" systemColor="labelColor"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="sair:" destination="y0m-sT-Yfv" eventType="touchUpInside" id="tqj-C0-LLr"/>
+                                    <action selector="cancel:" destination="y0m-sT-Yfv" eventType="touchUpInside" id="rxv-u3-pdR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kD-bA-eYx">
@@ -1706,23 +1745,68 @@
                                     <action selector="back:" destination="YDZ-ga-LCh" eventType="touchUpInside" id="naV-RY-JpW"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="oQj-UL-Fx0">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4uk-ER-SXE"/>
+                                    <constraint firstAttribute="height" constant="100" id="cux-GF-67t"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMt-cp-pV2">
+                                <rect key="frame" x="235" y="734" width="154" height="41"/>
+                                <color key="backgroundColor" red="0.38431372549019605" green="0.87450980392156863" blue="0.49411764705882355" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="Lpi-Am-1Yg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
+                                <state key="normal" title="Salvar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.94509803920000002" green="0.61960784310000006" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="save:" destination="y0m-sT-Yfv" eventType="touchUpInside" id="Znl-iQ-u1f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y6t-UJ-W2X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="y6t-UJ-W2X" firstAttribute="trailing" secondItem="Zt0-0Z-IBf" secondAttribute="trailing" constant="30" id="4Ph-ih-dmu"/>
+                            <constraint firstItem="y6t-UJ-W2X" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7kD-bA-eYx" secondAttribute="trailing" symbolic="YES" id="5IL-Ch-Xf0"/>
                             <constraint firstItem="cOQ-O6-EG6" firstAttribute="top" secondItem="7kD-bA-eYx" secondAttribute="bottom" constant="24" id="5rb-dO-8J1"/>
                             <constraint firstItem="7kD-bA-eYx" firstAttribute="top" secondItem="y6t-UJ-W2X" secondAttribute="top" constant="76" id="7jd-Uy-2dp"/>
                             <constraint firstItem="Zt0-0Z-IBf" firstAttribute="top" secondItem="cOQ-O6-EG6" secondAttribute="bottom" constant="32" id="9wr-c8-67i"/>
                             <constraint firstItem="Zt0-0Z-IBf" firstAttribute="leading" secondItem="y6t-UJ-W2X" secondAttribute="leading" constant="28" id="BOU-6F-Pbn"/>
+                            <constraint firstItem="Gev-0X-zvA" firstAttribute="leading" secondItem="y6t-UJ-W2X" secondAttribute="leading" constant="29" id="GUw-wk-VFW"/>
+                            <constraint firstItem="y6t-UJ-W2X" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cOQ-O6-EG6" secondAttribute="trailing" symbolic="YES" id="R35-Mb-dJR"/>
+                            <constraint firstItem="oQj-UL-Fx0" firstAttribute="centerY" secondItem="8Dv-Db-OHs" secondAttribute="centerY" id="Seb-T7-ugd"/>
+                            <constraint firstItem="XMt-cp-pV2" firstAttribute="top" secondItem="Zt0-0Z-IBf" secondAttribute="bottom" constant="42.5" id="bOs-ea-Qd3"/>
                             <constraint firstItem="Gev-0X-zvA" firstAttribute="top" secondItem="Zt0-0Z-IBf" secondAttribute="bottom" constant="42.5" id="fwJ-Mx-qMv"/>
                             <constraint firstItem="cOQ-O6-EG6" firstAttribute="leading" secondItem="y6t-UJ-W2X" secondAttribute="leading" constant="21" id="iEi-yi-ESw"/>
                             <constraint firstItem="7kD-bA-eYx" firstAttribute="leading" secondItem="8Dv-Db-OHs" secondAttribute="leading" constant="27" id="kE4-vn-ozv"/>
-                            <constraint firstItem="Gev-0X-zvA" firstAttribute="leading" secondItem="y6t-UJ-W2X" secondAttribute="leading" constant="85" id="rAO-94-NPH"/>
+                            <constraint firstItem="oQj-UL-Fx0" firstAttribute="centerX" secondItem="8Dv-Db-OHs" secondAttribute="centerX" id="nJH-Dc-J2s"/>
+                            <constraint firstItem="y6t-UJ-W2X" firstAttribute="trailing" secondItem="XMt-cp-pV2" secondAttribute="trailing" constant="25" id="sdv-ZI-VDM"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Perfil" image="perfil_bar" id="hhL-lm-Kw5"/>
                     <navigationItem key="navigationItem" id="iAe-tB-6oe"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="tRj-24-beI" id="uQk-KY-gxJ"/>
+                        <outlet property="nameTextField" destination="gKr-64-JBi" id="BGQ-Kp-RK7"/>
+                        <outlet property="sobrenomeTextField" destination="xd5-zZ-C4M" id="zPM-07-gCS"/>
+                        <outlet property="spinner" destination="oQj-UL-Fx0" id="qfj-mj-CHu"/>
+                        <outlet property="telefoneTextField" destination="NVa-Rf-wlE" id="6E7-2y-aMk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rCP-J0-9CY" sceneMemberID="firstResponder"/>
             </objects>
@@ -1748,8 +1832,14 @@
         <image name="profissionais" width="132" height="118"/>
         <image name="search_bar" width="40" height="40"/>
         <image name="sobre_bar" width="40" height="40"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

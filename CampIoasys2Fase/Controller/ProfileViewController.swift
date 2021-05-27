@@ -18,19 +18,20 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureView()
 
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("teste")
+        configureView()
     }
     
     
     func configureView(){
-        nameLabel.text = UserDefaults.standard.string(forKey: "firstname")! + " " + UserDefaults.standard.string(forKey: "lastname")!
+        nameLabel.text = "\(UserDefaults.standard.string(forKey: "firstname")!) \(UserDefaults.standard.string(forKey: "lastname")!)"
         phoneLabel.text = UserDefaults.standard.string(forKey: "telephone")!
-        emailLabel.text = UserDefaults.standard.string(forKey: "telephone")!
+        emailLabel.text = UserDefaults.standard.string(forKey: "email")!
     }
     
     
@@ -46,10 +47,6 @@ class ProfileViewController: UIViewController {
         
         vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
-        
-        //vc.modalPresentationStyle = .fullScreen
-        //self.present(vc, animated: true, completion: nil)
-
     
     }
     

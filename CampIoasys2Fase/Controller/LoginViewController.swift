@@ -37,7 +37,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         textField.backgroundColor = .white
         textField.layer.borderWidth = 2
-        textField.layer.borderColor = UIColor.blue.cgColor
+        textField.layer.borderColor = UIColor(red: 0.42, green: 0.55, blue: 1.00, alpha: 1.00).cgColor
     }
     
     

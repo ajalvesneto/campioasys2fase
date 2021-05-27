@@ -26,19 +26,14 @@ class Networking {
         if let params = parameters {
             do {
                 urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
-                print("entrou")
             } catch let error {
-                print("entrou no erro do body")
                 completion(nil, error)
                 return
             }
         }
         
-        print(urlRequest.httpBody)
-        
         let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
             if let error = error {
-                print("entrou no erro")
                 DispatchQueue.main.async { completion(nil, error) }
                 return
             }

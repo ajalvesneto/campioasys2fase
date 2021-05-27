@@ -11,7 +11,7 @@ import UIKit
 class DetailsViewController : UIViewController {
     
   var professionalViewModel = ProfessionalViewModel()
-  let consultViewModel = ConsultViewModel()
+  var consultViewModel = ConsultViewModel()
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var photoImage: UIImageView!
@@ -51,15 +51,15 @@ class DetailsViewController : UIViewController {
         
     
     @IBAction func register(_ sender: Any) {
-        var parameters = ["consultation" : ["professionalId" : professionalViewModel.professionals[0].id, "reason" : "Problems"]
-        ]
+        let parameters = /*["consultation" :*/ ["professionalId" : professionalViewModel.professionals[0].id, "reason" : "Problems Teste"]
         startStopAnimation()
         consultViewModel.doRegisterConsult(parameters: parameters) { result, error in
             self.startStopAnimation()
-            if (!result){
-                
+            if (result){
                 guard let registerVC = self.storyboard?.instantiateViewController(identifier: "successConsult") else  {return}
                 self.navigationController?.pushViewController(registerVC, animated: true)
+            }else{
+                print(error)
             }
         }
         

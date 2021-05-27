@@ -14,6 +14,8 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var emailLabel: UILabel!
     
+    var userViewModel = UserViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,7 +33,11 @@ class ProfileViewController: UIViewController {
     @IBAction func edit(_ sender: Any) {
     }
     
-    @IBAction func ok(_ sender: Any) {
+    @IBAction func sair(_ sender: Any) {
+        print("sair")
+        userViewModel.unsetUserDefaults()
+
+    
     }
     
 }

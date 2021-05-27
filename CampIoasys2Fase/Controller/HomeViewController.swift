@@ -30,17 +30,17 @@ class HomeViewController: UIViewController {
     
     
     @IBAction func comofunciona(_ sender: Any) {
-        tabBarController?.selectedIndex = 3
+        tabBarController?.selectedIndex = Screens.about.rawValue
     }
     
     @IBAction func historico(_ sender: Any) {
-        tabBarController?.selectedIndex = 2
+        tabBarController?.selectedIndex = Screens.consult.rawValue
     }
     @IBAction func profissionais(_ sender: Any) {
-        tabBarController?.selectedIndex = 1
+        tabBarController?.selectedIndex =  Screens.search.rawValue
     }
     @IBAction func perfil(_ sender: Any) {
-        tabBarController?.selectedIndex = 4
+        tabBarController?.selectedIndex = Screens.profile.rawValue
         
     }
     

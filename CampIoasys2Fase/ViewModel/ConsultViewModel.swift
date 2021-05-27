@@ -13,8 +13,6 @@ class ConsultViewModel {
     var api = API()
     var network = Networking()
     
-    var professionals : [ProfessionalModel] = []
-    
     let headers = ["authorization" : "Bearer \(UserDefaults.standard.string(forKey: "token") ?? "")" ]
     
     func doRegisterConsult(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){

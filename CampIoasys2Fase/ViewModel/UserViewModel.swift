@@ -54,4 +54,10 @@ class UserViewModel {
         UserDefaults.standard.set(result.user?.email, forKey: "email")
         UserDefaults.standard.set(result.user?.telephone, forKey: "telephone")
     }
+    
+    func unsetUserDefaults(){
+        let domain = Bundle.main.bundleIdentifier!
+        UserDefaults.standard.removePersistentDomain(forName: domain)
+        UserDefaults.standard.synchronize()
+    }
 }

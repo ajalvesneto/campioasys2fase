@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19123923265E81EC00A77915 /* ConsultResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19123922265E81EC00A77915 /* ConsultResult.swift */; };
+		19123923265E81EC00A77915 /* ConsultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19123922265E81EC00A77915 /* ConsultModel.swift */; };
 		191BE26B265711AC00BFC029 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191BE26A265711AC00BFC029 /* SuccessViewController.swift */; };
 		19208A71265D2276007AA552 /* ProfessionalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19208A70265D2276007AA552 /* ProfessionalTableViewCell.swift */; };
 		19208A73265D3C8D007AA552 /* ComoFuncionaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19208A72265D3C8D007AA552 /* ComoFuncionaViewController.swift */; };
@@ -25,6 +25,7 @@
 		199F3576265FCD0E00C1F981 /* ConsultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F3575265FCD0E00C1F981 /* ConsultTableViewCell.swift */; };
 		199F3579265FD04C00C1F981 /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F3578265FD04C00C1F981 /* Screens.swift */; };
 		199F357B265FDDE000C1F981 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F357A265FDDE000C1F981 /* EditProfileViewController.swift */; };
+		199F357D26604C1F00C1F981 /* ConsultResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F357C26604C1F00C1F981 /* ConsultResult.swift */; };
 		19A0740B2653F06C001C55B8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0740A2653F06B001C55B8 /* logo.png */; };
 		19A0740E26540073001C55B8 /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = 19A0740D26540073001C55B8 /* Lato */; };
 		19A07411265417FA001C55B8 /* background_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0740F265417FA001C55B8 /* background_splash.png */; };
@@ -45,7 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		19123922265E81EC00A77915 /* ConsultResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultResult.swift; sourceTree = "<group>"; };
+		19123922265E81EC00A77915 /* ConsultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultModel.swift; sourceTree = "<group>"; };
 		191BE26A265711AC00BFC029 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
 		19208A70265D2276007AA552 /* ProfessionalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalTableViewCell.swift; sourceTree = "<group>"; };
 		19208A72265D3C8D007AA552 /* ComoFuncionaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComoFuncionaViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		199F3575265FCD0E00C1F981 /* ConsultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultTableViewCell.swift; sourceTree = "<group>"; };
 		199F3578265FD04C00C1F981 /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
 		199F357A265FDDE000C1F981 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		199F357C26604C1F00C1F981 /* ConsultResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultResult.swift; sourceTree = "<group>"; };
 		19A0740A2653F06B001C55B8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Assets.xcassets/logo.png; sourceTree = "<group>"; };
 		19A0740D26540073001C55B8 /* Lato */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = Lato; path = CampIoasys2Fase/Resources/Fonts/Lato; sourceTree = SOURCE_ROOT; };
 		19A0740F265417FA001C55B8 /* background_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background_splash.png; path = Assets.xcassets/background_splash.png; sourceTree = "<group>"; };
@@ -172,7 +174,8 @@
 				194841D8265C0BA200B287EB /* RegisterResult.swift */,
 				196A325B2659E97300C55F67 /* ProfessionalResult.swift */,
 				196A325D2659E9DD00C55F67 /* ProfessionalModel.swift */,
-				19123922265E81EC00A77915 /* ConsultResult.swift */,
+				19123922265E81EC00A77915 /* ConsultModel.swift */,
+				199F357C26604C1F00C1F981 /* ConsultResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -394,13 +397,14 @@
 				19208A71265D2276007AA552 /* ProfessionalTableViewCell.swift in Sources */,
 				19C7441726568C37004EF239 /* HomeViewController.swift in Sources */,
 				19711A80265C387200130F14 /* ProfessionalsViewController.swift in Sources */,
-				19123923265E81EC00A77915 /* ConsultResult.swift in Sources */,
+				19123923265E81EC00A77915 /* ConsultModel.swift in Sources */,
 				19C744212656E365004EF239 /* LoginResult.swift in Sources */,
 				196A325C2659E97300C55F67 /* ProfessionalResult.swift in Sources */,
 				196A325E2659E9DE00C55F67 /* ProfessionalModel.swift in Sources */,
 				19FD561B264C842E0022CEB7 /* AppDelegate.swift in Sources */,
 				19405C88265EA17100D05F4A /* ProfileViewController.swift in Sources */,
 				19405C86265E86EA00D05F4A /* ConsultViewModel.swift in Sources */,
+				199F357D26604C1F00C1F981 /* ConsultResult.swift in Sources */,
 				199F3574265FCA6200C1F981 /* ConsultsViewController.swift in Sources */,
 				196A32602659EB4A00C55F67 /* ProfessionalViewModel.swift in Sources */,
 				19F9F023265175B500333079 /* UserViewModel.swift in Sources */,

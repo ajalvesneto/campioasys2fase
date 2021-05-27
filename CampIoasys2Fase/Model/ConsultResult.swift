@@ -1,27 +1,28 @@
 //
-//  ConsultResult.swift
+//  ProfessionalsResult.swift
 //  CampIoasys2Fase
 //
-//  Created by Antonio Alves on 26/05/21.
+//  Created by Antonio Alves on 22/05/21.
 //
 
 import Foundation
 
-
-struct ConsultResult : Codable {
+struct ConsultResult : Codable{
     
-    let id : String
-    let userid : String
-    let status : String
-    let professionalid : String
-    let comment : String
-    //let good : Bool?
+    let consults : [ConsultModel]
+    let metadata : MetadataConsult
+    
+    enum CodingKeys : String, CodingKey {
+        case consults = "data", metadata
+    }
     
 }
 
-enum CodingKeys : String, CodingKey {
-    case id, status, comment
-    case userid = "userId"
-    case professionalid = "professionalId"
-    //case good = "wasGood"
+struct MetadataConsult : Codable{
+    let total : Int
+    
+    enum CodingKeys : String, CodingKey {
+        case total
+    }
+    
 }

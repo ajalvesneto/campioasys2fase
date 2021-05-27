@@ -13,6 +13,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var phoneLabel: UILabel!
     
     @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var editButton: UIButton!
     
     var userViewModel = UserViewModel()
     
@@ -32,6 +33,11 @@ class ProfileViewController: UIViewController {
         nameLabel.text = "\(UserDefaults.standard.string(forKey: "firstname")!) \(UserDefaults.standard.string(forKey: "lastname")!)"
         phoneLabel.text = UserDefaults.standard.string(forKey: "telephone")!
         emailLabel.text = UserDefaults.standard.string(forKey: "email")!
+        
+        editButton.layer.borderWidth = 2
+        editButton.layer.borderColor = UIColor(red: 0.42, green: 0.55, blue: 1.00, alpha: 1.00).cgColor
+        
+        
     }
     
     

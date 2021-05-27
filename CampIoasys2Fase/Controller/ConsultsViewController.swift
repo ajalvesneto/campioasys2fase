@@ -12,27 +12,33 @@ class ConsultsViewController : UIViewController {
     
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var consultsTableView: UITableView!
+    @IBOutlet weak var erroView: UIView!
     
+    
+    var consults = ConsultViewModel() {
+        didSet {
+            consultsTableView.reloadData()
+        }
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         consultsTableView.dataSource = self
         consultsTableView.delegate = self
-       // list()
+        list()
     }
 }
 
 extension ConsultsViewController : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // professionals.professionals.count
-        3
+         consults.consults.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        //let professional = professionals.professionals[indexPath.row]
+        let consult = consults.consults[indexPath.row]
         let cell = consultsTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ConsultTableViewCell
         cell.selectionStyle = .none
         configureLayoutCell(cell.consultView)
@@ -69,13 +75,20 @@ extension ConsultsViewController : UITableViewDelegate, UITableViewDataSource{
     
     func list(){
         startStopAnimation()
-        /*professionals.doListProfessionals(nil) { result, error in
+        consults.doListConsult(parameters: nil) { result, error in
             self.startStopAnimation()
             if (result){
-                self.professionalsTableView.reloadData()
+                self.consultsTableView.reloadData()
+            }else{
+                self.exibeImagemNaoEncontrada()
             }
-        }*/
+        }
         
+    }
+    
+    func exibeImagemNaoEncontrada(){
+        consultsTableView.isHidden = true
+        erroView.isHidden = false
     }
     
     func startStopAnimation(){

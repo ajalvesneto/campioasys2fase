@@ -17,11 +17,13 @@ class EditProfileViewController : UIViewController{
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var telefoneTextField: UITextField!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet weak var cancelarButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setValues()
+        configureLayout()
     }
     
     @IBAction func back(_ sender: Any) {
@@ -50,6 +52,16 @@ class EditProfileViewController : UIViewController{
         sobrenomeTextField.text = UserDefaults.standard.string(forKey: "lastname")
         emailTextField.text = UserDefaults.standard.string(forKey: "email")
         telefoneTextField.text = UserDefaults.standard.string(forKey: "telephone")
+    }
+    
+    func configureLayout(){
+        nameTextField.layer.borderColor = UIColor(red: 0.42, green: 0.55, blue: 1.00, alpha: 1.00).cgColor
+        sobrenomeTextField.layer.borderColor = UIColor(red: 0.42, green: 0.55, blue: 1.00, alpha: 1.00).cgColor
+        emailTextField.layer.borderColor = UIColor(red: 0.42, green: 0.55, blue: 1.00, alpha: 1.00).cgColor
+        telefoneTextField.layer.borderColor = UIColor(red: 0.42, green: 0.55, blue: 1.00, alpha: 1.00).cgColor
+        
+        cancelarButton.layer.borderColor = UIColor(red: 0.93, green: 0.49, blue: 0.25, alpha: 1.00).cgColor
+        
     }
     
     func startStopAnimation(){

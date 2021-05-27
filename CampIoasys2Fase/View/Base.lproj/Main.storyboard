@@ -1313,8 +1313,11 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRd-7g-USC">
-                                <rect key="frame" x="324" y="168" width="66" height="41"/>
-                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
+                                <rect key="frame" x="318" y="174" width="72" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="jzK-lC-eAS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="16"/>
                                 <state key="normal" title="Editar">
                                     <color key="titleColor" red="0.42352941176470588" green="0.55294117647058827" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -1359,7 +1362,7 @@
                             <constraint firstItem="Pgu-oR-bbt" firstAttribute="top" secondItem="jw8-CZ-Uz1" secondAttribute="bottom" constant="30" id="OFd-6L-vth"/>
                             <constraint firstItem="xOt-6N-gtP" firstAttribute="trailing" secondItem="XDf-Jy-xuR" secondAttribute="trailing" constant="90" id="PtK-7s-GpP"/>
                             <constraint firstItem="xOt-6N-gtP" firstAttribute="trailing" secondItem="wRd-7g-USC" secondAttribute="trailing" constant="24" id="Vdz-wu-jbD"/>
-                            <constraint firstItem="wRd-7g-USC" firstAttribute="top" secondItem="xOt-6N-gtP" secondAttribute="top" constant="124" id="cZ8-Eq-nvT"/>
+                            <constraint firstItem="wRd-7g-USC" firstAttribute="top" secondItem="xOt-6N-gtP" secondAttribute="top" constant="130" id="g3w-s5-AVY"/>
                             <constraint firstItem="jw8-CZ-Uz1" firstAttribute="leading" secondItem="xOt-6N-gtP" secondAttribute="leading" constant="24" id="j6W-fy-FfU"/>
                             <constraint firstItem="xOt-6N-gtP" firstAttribute="trailing" secondItem="Pgu-oR-bbt" secondAttribute="trailing" constant="30" id="pEs-IL-CQ6"/>
                             <constraint firstItem="xOt-6N-gtP" firstAttribute="trailing" secondItem="jw8-CZ-Uz1" secondAttribute="trailing" constant="156" id="qKL-2Z-rkd"/>
@@ -1371,6 +1374,7 @@
                     <tabBarItem key="tabBarItem" title="Perfil" image="perfil_bar" id="Zj4-Wj-Zap"/>
                     <navigationItem key="navigationItem" id="FdI-oS-6k9"/>
                     <connections>
+                        <outlet property="editButton" destination="wRd-7g-USC" id="gdq-DY-GtS"/>
                         <outlet property="emailLabel" destination="u5I-Wr-qwM" id="uFz-mz-PSx"/>
                         <outlet property="nameLabel" destination="zFt-ww-XGm" id="6UO-Km-ryi"/>
                         <outlet property="phoneLabel" destination="amp-dX-pdf" id="Db0-hh-LUr"/>
@@ -1394,7 +1398,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="28a-yi-7Z8">
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="28a-yi-7Z8">
                                 <rect key="frame" x="24" y="245.5" width="366" height="567.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1491,7 +1495,7 @@
                                                         <constraint firstItem="xf7-m4-AV2" firstAttribute="top" secondItem="ym5-hn-KCm" secondAttribute="bottom" constant="22" id="z3Z-gg-fMu"/>
                                                     </constraints>
                                                 </view>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xI-kw-bw9">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xI-kw-bw9">
                                                     <rect key="frame" x="7" y="343" width="352" height="64"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.6588235294" green="0.3921568627" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1530,6 +1534,43 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lNr-5n-e8z">
+                                <rect key="frame" x="22" y="307.5" width="370" height="505.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="consulta_vazio" translatesAutoresizingMaskIntoConstraints="NO" id="xdL-nj-uoj">
+                                        <rect key="frame" x="22" y="0.0" width="322" height="148"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Parece que não há nada aqui" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRU-nr-W03">
+                                        <rect key="frame" x="26" y="188" width="322" height="86.5"/>
+                                        <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rc-09-TaZ">
+                                        <rect key="frame" x="26" y="286.5" width="307" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="rja-P4-Mwo"/>
+                                        </constraints>
+                                        <string key="text">Assim que você solicitar a sua primeira consulta ela já estará no seu histórico
+</string>
+                                        <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="tRU-nr-W03" firstAttribute="top" secondItem="xdL-nj-uoj" secondAttribute="bottom" constant="40" id="XBv-oC-I4l"/>
+                                    <constraint firstItem="tRU-nr-W03" firstAttribute="leading" secondItem="lNr-5n-e8z" secondAttribute="leading" constant="26" id="aXf-I9-I0e"/>
+                                    <constraint firstItem="6rc-09-TaZ" firstAttribute="leading" secondItem="lNr-5n-e8z" secondAttribute="leading" constant="26" id="dYp-dr-qaX"/>
+                                    <constraint firstItem="xdL-nj-uoj" firstAttribute="top" secondItem="lNr-5n-e8z" secondAttribute="top" id="dZ7-Ua-BY4"/>
+                                    <constraint firstItem="xdL-nj-uoj" firstAttribute="leading" secondItem="lNr-5n-e8z" secondAttribute="leading" constant="22" id="fqC-mz-7EJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="xdL-nj-uoj" secondAttribute="trailing" constant="26" id="gWu-kH-BA9"/>
+                                    <constraint firstAttribute="trailing" secondItem="6rc-09-TaZ" secondAttribute="trailing" constant="37" id="gho-ko-976"/>
+                                    <constraint firstAttribute="trailing" secondItem="tRU-nr-W03" secondAttribute="trailing" constant="22" id="o8Q-NJ-uCi"/>
+                                    <constraint firstItem="6rc-09-TaZ" firstAttribute="top" secondItem="tRU-nr-W03" secondAttribute="bottom" constant="12" id="xYk-U9-ZsS"/>
+                                </constraints>
+                            </view>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="UQI-KW-Ogm">
                                 <rect key="frame" x="157" y="398" width="100" height="100"/>
                                 <constraints>
@@ -1541,13 +1582,17 @@
                         <viewLayoutGuide key="safeArea" id="DxR-ot-iNi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="DxR-ot-iNi" firstAttribute="bottom" secondItem="lNr-5n-e8z" secondAttribute="bottom" id="2xF-15-TYl"/>
                             <constraint firstItem="SEp-mg-U2Z" firstAttribute="top" secondItem="DxR-ot-iNi" secondAttribute="top" constant="100" id="3Gr-1M-mdX"/>
                             <constraint firstItem="DxR-ot-iNi" firstAttribute="trailing" secondItem="28a-yi-7Z8" secondAttribute="trailing" constant="24" id="9a3-Wu-6lx"/>
+                            <constraint firstItem="lNr-5n-e8z" firstAttribute="top" secondItem="SEp-mg-U2Z" secondAttribute="bottom" constant="120" id="Bkr-MM-EvG"/>
                             <constraint firstItem="UQI-KW-Ogm" firstAttribute="centerY" secondItem="lmq-hb-R6o" secondAttribute="centerY" id="CwX-nM-LgS"/>
                             <constraint firstItem="DxR-ot-iNi" firstAttribute="bottom" secondItem="28a-yi-7Z8" secondAttribute="bottom" id="Hb1-jh-VJC"/>
                             <constraint firstItem="28a-yi-7Z8" firstAttribute="leading" secondItem="DxR-ot-iNi" secondAttribute="leading" constant="24" id="m6j-Ap-1CW"/>
+                            <constraint firstItem="lNr-5n-e8z" firstAttribute="leading" secondItem="DxR-ot-iNi" secondAttribute="leading" constant="22" id="o1D-cM-m9M"/>
                             <constraint firstItem="UQI-KW-Ogm" firstAttribute="centerX" secondItem="lmq-hb-R6o" secondAttribute="centerX" id="rPV-qK-ym4"/>
                             <constraint firstItem="28a-yi-7Z8" firstAttribute="top" secondItem="SEp-mg-U2Z" secondAttribute="bottom" constant="58" id="rfL-2l-eU6"/>
+                            <constraint firstItem="DxR-ot-iNi" firstAttribute="trailing" secondItem="lNr-5n-e8z" secondAttribute="trailing" constant="22" id="trW-X9-D2Y"/>
                             <constraint firstItem="SEp-mg-U2Z" firstAttribute="leading" secondItem="DxR-ot-iNi" secondAttribute="leading" constant="21" id="v50-w4-wT7"/>
                         </constraints>
                     </view>
@@ -1555,6 +1600,7 @@
                     <navigationItem key="navigationItem" id="gmE-b0-gK6"/>
                     <connections>
                         <outlet property="consultsTableView" destination="28a-yi-7Z8" id="q2y-OG-tgm"/>
+                        <outlet property="erroView" destination="lNr-5n-e8z" id="WFI-YX-D7y"/>
                         <outlet property="spinner" destination="UQI-KW-Ogm" id="NzV-Mr-e2D"/>
                     </connections>
                 </viewController>
@@ -1720,7 +1766,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="24"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                         <integer key="value" value="2"/>
@@ -1764,7 +1810,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="24"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                         <integer key="value" value="2"/>
@@ -1801,6 +1847,7 @@
                     <tabBarItem key="tabBarItem" title="Perfil" image="perfil_bar" id="hhL-lm-Kw5"/>
                     <navigationItem key="navigationItem" id="iAe-tB-6oe"/>
                     <connections>
+                        <outlet property="cancelarButton" destination="Gev-0X-zvA" id="nPS-23-7u2"/>
                         <outlet property="emailTextField" destination="tRj-24-beI" id="uQk-KY-gxJ"/>
                         <outlet property="nameTextField" destination="gKr-64-JBi" id="BGQ-Kp-RK7"/>
                         <outlet property="sobrenomeTextField" destination="xd5-zZ-C4M" id="zPM-07-gCS"/>
@@ -1820,18 +1867,19 @@
         <image name="back_button" width="12" height="20"/>
         <image name="como_funciona" width="200" height="150"/>
         <image name="confirm" width="170" height="170"/>
-        <image name="consult_bar" width="32" height="32"/>
+        <image name="consult_bar" width="25" height="25"/>
+        <image name="consulta_vazio" width="327" height="148"/>
         <image name="filter_button" width="64" height="65"/>
         <image name="historico" width="118" height="140"/>
-        <image name="home_bar" width="40" height="40"/>
+        <image name="home_bar" width="25" height="25"/>
         <image name="logo.png" width="261" height="66"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="perfil" width="36" height="36"/>
-        <image name="perfil_bar" width="30" height="30"/>
+        <image name="perfil_bar" width="25" height="25"/>
         <image name="profile" width="200" height="152"/>
         <image name="profissionais" width="132" height="118"/>
-        <image name="search_bar" width="40" height="40"/>
-        <image name="sobre_bar" width="40" height="40"/>
+        <image name="search_bar" width="25" height="25"/>
+        <image name="sobre_bar" width="25" height="25"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

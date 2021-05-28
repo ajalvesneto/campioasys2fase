@@ -25,6 +25,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        verificaLogado()
         emailTextField.delegate = self
         passwordTextField.delegate = self
         
@@ -68,6 +69,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @objc func register(_ sender: Any) {
         let registerVC = self.storyboard?.instantiateViewController(identifier: "register") as! RegisterScrollViewController
         self.navigationController?.pushViewController(registerVC, animated: true)
+    }
+    
+    func verificaLogado(){
+        if (UserDefaults.standard.string(forKey: "token") != nil){
+            let homeVC = self.storyboard?.instantiateViewController(identifier: "home")
+            self.navigationController?.pushViewController(homeVC!, animated: true)
+        }
+        
+        
     }
     
     

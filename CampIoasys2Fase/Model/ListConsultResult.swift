@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct ConsultResult : Codable{
+struct ListConsultResult : Codable{
     
-    let consults : [ConsultModel]
+    let consults : [ListConsultModel]
     let metadata : MetadataConsult
     
     enum CodingKeys : String, CodingKey {

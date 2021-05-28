@@ -7,6 +7,14 @@
 
 import Foundation
 
+struct ConsultResult : Codable{
+    let consult : ConsultModel
+    
+    enum CodingKeys : String, CodingKey {
+        case consult = "storedConsultation"
+    }
+}
+
 
 struct ConsultModel : Codable {
     
@@ -14,14 +22,12 @@ struct ConsultModel : Codable {
     let userid : String
     let status : String
     let professionalid : String
-    let comment : String
-    //let good : Bool?
     
-}
-
-enum CodingKeys : String, CodingKey {
-    case id, status, comment
-    case userid = "userId"
-    case professionalid = "professionalId"
-    //case good = "wasGood"
+    
+    
+    enum CodingKeys : String, CodingKey {
+        case id, status
+        case userid = "userId"
+        case professionalid = "professionalId"
+    }
 }

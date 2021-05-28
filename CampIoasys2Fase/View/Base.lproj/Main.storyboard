@@ -1398,7 +1398,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="28a-yi-7Z8">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="28a-yi-7Z8">
                                 <rect key="frame" x="24" y="245.5" width="366" height="567.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -1450,9 +1450,8 @@
                                                             <color key="textColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pD-6H-38V">
-                                                            <rect key="frame" x="109" y="237.5" width="106" height="41"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pD-6H-38V">
+                                                            <rect key="frame" x="86" y="237.5" width="173" height="41"/>
                                                             <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
                                                             <state key="normal" title="Solicitada">
                                                                 <color key="titleColor" red="0.42352941179999998" green="0.55294117649999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1481,6 +1480,7 @@
                                                         <constraint firstAttribute="width" constant="346" id="Lhd-YB-VsU"/>
                                                         <constraint firstItem="ym5-hn-KCm" firstAttribute="leading" secondItem="dbT-UR-yfq" secondAttribute="leading" constant="27" id="Nqb-oe-fNo"/>
                                                         <constraint firstItem="xf7-m4-AV2" firstAttribute="leading" secondItem="dbT-UR-yfq" secondAttribute="leading" constant="65" id="Ros-9M-G4u"/>
+                                                        <constraint firstAttribute="trailing" secondItem="7pD-6H-38V" secondAttribute="trailing" constant="87" id="VS8-LW-Q9w"/>
                                                         <constraint firstItem="BD0-MF-T3i" firstAttribute="leading" secondItem="dbT-UR-yfq" secondAttribute="leading" constant="12" id="bQi-9a-nDt"/>
                                                         <constraint firstItem="eHM-Mz-Ez2" firstAttribute="top" secondItem="0mS-N8-1ao" secondAttribute="bottom" constant="8" id="cBo-pA-dOv"/>
                                                         <constraint firstItem="BD0-MF-T3i" firstAttribute="top" secondItem="dbT-UR-yfq" secondAttribute="top" constant="19" id="ego-nO-nFC"/>
@@ -1490,15 +1490,17 @@
                                                         <constraint firstItem="0mS-N8-1ao" firstAttribute="leading" secondItem="BD0-MF-T3i" secondAttribute="trailing" constant="16" id="lMo-I1-KCW"/>
                                                         <constraint firstItem="eHM-Mz-Ez2" firstAttribute="leading" secondItem="BD0-MF-T3i" secondAttribute="trailing" constant="16" id="lTk-pW-OaZ"/>
                                                         <constraint firstItem="ym5-hn-KCm" firstAttribute="top" secondItem="BD0-MF-T3i" secondAttribute="bottom" constant="5" id="lfh-g2-QYP"/>
+                                                        <constraint firstItem="7pD-6H-38V" firstAttribute="top" secondItem="xf7-m4-AV2" secondAttribute="bottom" constant="42" id="vS6-Tr-0I9"/>
                                                         <constraint firstAttribute="trailing" secondItem="sym-v5-zTU" secondAttribute="trailing" constant="21" id="xg1-SA-CaA"/>
                                                         <constraint firstItem="sym-v5-zTU" firstAttribute="top" secondItem="dbT-UR-yfq" secondAttribute="top" constant="24" id="yJ7-ns-2yQ"/>
+                                                        <constraint firstItem="7pD-6H-38V" firstAttribute="leading" secondItem="dbT-UR-yfq" secondAttribute="leading" constant="86" id="ypq-xn-b2A"/>
                                                         <constraint firstItem="xf7-m4-AV2" firstAttribute="top" secondItem="ym5-hn-KCm" secondAttribute="bottom" constant="22" id="z3Z-gg-fMu"/>
                                                     </constraints>
                                                 </view>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xI-kw-bw9">
                                                     <rect key="frame" x="7" y="343" width="352" height="64"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <color key="backgroundColor" red="0.6588235294" green="0.3921568627" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="24"/>
                                                     <state key="normal" title="Avaliar">
                                                         <color key="titleColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>

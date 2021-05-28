@@ -10,22 +10,27 @@ import UIKit
 
 class ConsultsViewController : UIViewController {
     
+    //MARK: IBOutlet
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var consultsTableView: UITableView!
     @IBOutlet weak var erroView: UIView!
     
     
-    var consults = ConsultViewModel() {
+    //MARK: Vars
+    var consultVM = ConsultViewModel() {
         didSet {
             consultsTableView.reloadData()
         }
     }
     
-    
+    //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         consultsTableView.dataSource = self
         consultsTableView.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         list()
     }
 }
@@ -33,15 +38,18 @@ class ConsultsViewController : UIViewController {
 extension ConsultsViewController : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         consults.consults.count
+        consultVM.consults.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let consult = consults.consults[indexPath.row]
+        let consult = consultVM.consults[indexPath.row]
         let cell = consultsTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ConsultTableViewCell
         cell.selectionStyle = .none
-        configureLayoutCell(cell.consultView)
+        cell.statusButton.layer.borderWidth = 2
+        cell.statusButton.layer.borderColor = UIColor(red: 0.42, green: 0.55, blue: 1.00, alpha: 1.00).cgColor
+        
+        configureLayouViewCell(cell.consultView)
         
         /*var remotely = ""
         if (professional.remotely){
@@ -50,12 +58,18 @@ extension ConsultsViewController : UITableViewDelegate, UITableViewDataSource{
         
         
         
+        cell.nameLabel.text = consult.professional.firstname + " " + consult.professional.lastname
+        cell.codeLabel.text = "CRP: \(consult.professional.crp)"
+        cell.emailLabel.text = consult.professional.email
         
-        
-        /*cell.nameLabel.text = professional.firstname + " " + professionals.professionals[indexPath.row].lastname
-        cell.codeLabel.text = "CRP: \(professional.crp)"
-        cell.emailLabel.text = professional.email
-        cell.placeLabel.text = "Atendimento: \(remotely)\(professional.city)"*/
+        if (consult.status == "confirmed") {
+            cell.statusButton.tintColor = UIColor(red: 0.22, green: 0.84, blue: 0.36, alpha: 1.00)
+            cell.statusButton.layer.borderColor = UIColor(red: 0.22, green: 0.84, blue: 0.36, alpha: 1.00).cgColor
+            cell.statusButton.setTitle("Realizada", for: .normal)
+            
+            cell.avaliationButton.backgroundColor = UIColor(red: 0.66, green: 0.39, blue: 1.00, alpha: 1.00)
+            cell.avaliationButton.isEnabled = true
+        }
         
         return cell
     }
@@ -67,18 +81,23 @@ extension ConsultsViewController : UITableViewDelegate, UITableViewDataSource{
     }
     
     
-    func configureLayoutCell(_ view :  UIView){
+    func configureLayouViewCell(_ view :  UIView){
         view.layer.borderWidth = 2
         view.layer.borderColor = UIColor(red: 0.44, green: 0.00, blue: 1.00, alpha: 1.00).cgColor
         view.layer.cornerRadius = 10
+        
     }
     
     func list(){
         startStopAnimation()
-        consults.doListConsult(parameters: nil) { result, error in
+        consultVM.doListConsult(parameters: nil) { result, error in
             self.startStopAnimation()
             if (result){
                 self.consultsTableView.reloadData()
+                print(self.consultsTableView.numberOfSections)
+                if (self.consultVM.consults.count == 0 ){
+                    self.exibeImagemNaoEncontrada()
+                }
             }else{
                 self.exibeImagemNaoEncontrada()
             }

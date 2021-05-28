@@ -20,5 +20,69 @@
             landmarkType = "13">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BE4BE56-07F0-457A-96C8-26855D38E466"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CampIoasys2Fase/Network/Network.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "performRequest(type:path:method:headers:parameters:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4792010D-1718-46C2-A558-9B507738DA89"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CampIoasys2Fase/Network/Network.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "performRequest(type:path:method:headers:parameters:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4792010D-1718-46C2-A558-9B507738DA89 - e67620f6f35525fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CampIoasys2Fase.Networking.performRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(type: &#x3c4;_0_0.Type, path: Swift.String, method: CampIoasys2Fase.HTTPMethod, headers: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, completion: (Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CampIoasys2Fase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonioalves/Documents/Camp%20Ios/CampIoasys2Fase/CampIoasys2Fase/Network/Network.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "1422">
+               </Location>
+               <Location
+                  uuid = "4792010D-1718-46C2-A558-9B507738DA89 - 33365f88efc2fc82"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CampIoasys2Fase.Networking.performRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(type: &#x3c4;_0_0.Type, path: Swift.String, method: CampIoasys2Fase.HTTPMethod, headers: Swift.Dictionary&lt;Swift.String, Swift.String&gt;, parameters: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;, completion: (Swift.Optional&lt;&#x3c4;_0_0&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "CampIoasys2Fase"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/antonioalves/Documents/Camp%20Ios/CampIoasys2Fase/CampIoasys2Fase/Network/Network.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "402">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -12,6 +12,7 @@
 		19208A71265D2276007AA552 /* ProfessionalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19208A70265D2276007AA552 /* ProfessionalTableViewCell.swift */; };
 		19208A73265D3C8D007AA552 /* ComoFuncionaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19208A72265D3C8D007AA552 /* ComoFuncionaViewController.swift */; };
 		19208A75265D6DE4007AA552 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19208A74265D6DE4007AA552 /* DetailsViewController.swift */; };
+		19329E3326608D4E0083E86C /* ListConsultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19329E3226608D4E0083E86C /* ListConsultModel.swift */; };
 		19405C86265E86EA00D05F4A /* ConsultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19405C85265E86EA00D05F4A /* ConsultViewModel.swift */; };
 		19405C88265EA17100D05F4A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19405C87265EA17000D05F4A /* ProfileViewController.swift */; };
 		194841D9265C0BA200B287EB /* RegisterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194841D8265C0BA200B287EB /* RegisterResult.swift */; };
@@ -25,7 +26,7 @@
 		199F3576265FCD0E00C1F981 /* ConsultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F3575265FCD0E00C1F981 /* ConsultTableViewCell.swift */; };
 		199F3579265FD04C00C1F981 /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F3578265FD04C00C1F981 /* Screens.swift */; };
 		199F357B265FDDE000C1F981 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F357A265FDDE000C1F981 /* EditProfileViewController.swift */; };
-		199F357D26604C1F00C1F981 /* ConsultResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F357C26604C1F00C1F981 /* ConsultResult.swift */; };
+		199F357D26604C1F00C1F981 /* ListConsultResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199F357C26604C1F00C1F981 /* ListConsultResult.swift */; };
 		19A0740B2653F06C001C55B8 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0740A2653F06B001C55B8 /* logo.png */; };
 		19A0740E26540073001C55B8 /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = 19A0740D26540073001C55B8 /* Lato */; };
 		19A07411265417FA001C55B8 /* background_splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 19A0740F265417FA001C55B8 /* background_splash.png */; };
@@ -51,6 +52,7 @@
 		19208A70265D2276007AA552 /* ProfessionalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalTableViewCell.swift; sourceTree = "<group>"; };
 		19208A72265D3C8D007AA552 /* ComoFuncionaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComoFuncionaViewController.swift; sourceTree = "<group>"; };
 		19208A74265D6DE4007AA552 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		19329E3226608D4E0083E86C /* ListConsultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListConsultModel.swift; sourceTree = "<group>"; };
 		19405C85265E86EA00D05F4A /* ConsultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultViewModel.swift; sourceTree = "<group>"; };
 		19405C87265EA17000D05F4A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		194841D8265C0BA200B287EB /* RegisterResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResult.swift; sourceTree = "<group>"; };
@@ -64,7 +66,7 @@
 		199F3575265FCD0E00C1F981 /* ConsultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultTableViewCell.swift; sourceTree = "<group>"; };
 		199F3578265FD04C00C1F981 /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
 		199F357A265FDDE000C1F981 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
-		199F357C26604C1F00C1F981 /* ConsultResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultResult.swift; sourceTree = "<group>"; };
+		199F357C26604C1F00C1F981 /* ListConsultResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListConsultResult.swift; sourceTree = "<group>"; };
 		19A0740A2653F06B001C55B8 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Assets.xcassets/logo.png; sourceTree = "<group>"; };
 		19A0740D26540073001C55B8 /* Lato */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = Lato; path = CampIoasys2Fase/Resources/Fonts/Lato; sourceTree = SOURCE_ROOT; };
 		19A0740F265417FA001C55B8 /* background_splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background_splash.png; path = Assets.xcassets/background_splash.png; sourceTree = "<group>"; };
@@ -175,7 +177,8 @@
 				196A325B2659E97300C55F67 /* ProfessionalResult.swift */,
 				196A325D2659E9DD00C55F67 /* ProfessionalModel.swift */,
 				19123922265E81EC00A77915 /* ConsultModel.swift */,
-				199F357C26604C1F00C1F981 /* ConsultResult.swift */,
+				199F357C26604C1F00C1F981 /* ListConsultResult.swift */,
+				19329E3226608D4E0083E86C /* ListConsultModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				19F9F0212651759D00333079 /* UserModel.swift in Sources */,
 				19546BA52655CC66003B894A /* RegisterScrollViewController.swift in Sources */,
 				194841D9265C0BA200B287EB /* RegisterResult.swift in Sources */,
+				19329E3326608D4E0083E86C /* ListConsultModel.swift in Sources */,
 				19208A73265D3C8D007AA552 /* ComoFuncionaViewController.swift in Sources */,
 				19F9F0272651DBE200333079 /* HTTPMethod.swift in Sources */,
 				19F9F0252651DBBF00333079 /* Network.swift in Sources */,
@@ -404,7 +408,7 @@
 				19FD561B264C842E0022CEB7 /* AppDelegate.swift in Sources */,
 				19405C88265EA17100D05F4A /* ProfileViewController.swift in Sources */,
 				19405C86265E86EA00D05F4A /* ConsultViewModel.swift in Sources */,
-				199F357D26604C1F00C1F981 /* ConsultResult.swift in Sources */,
+				199F357D26604C1F00C1F981 /* ListConsultResult.swift in Sources */,
 				199F3574265FCA6200C1F981 /* ConsultsViewController.swift in Sources */,
 				196A32602659EB4A00C55F67 /* ProfessionalViewModel.swift in Sources */,
 				19F9F023265175B500333079 /* UserViewModel.swift in Sources */,

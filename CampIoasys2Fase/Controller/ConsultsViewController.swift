@@ -28,10 +28,11 @@ class ConsultsViewController : UIViewController {
         super.viewDidLoad()
         consultsTableView.dataSource = self
         consultsTableView.delegate = self
+        listConsults()
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        list()
+        listConsults()
     }
 }
 
@@ -88,15 +89,17 @@ extension ConsultsViewController : UITableViewDelegate, UITableViewDataSource{
         
     }
     
-    func list(){
+    func listConsults() {
         startStopAnimation()
         consultVM.doListConsult(parameters: nil) { result, error in
             self.startStopAnimation()
             if (result){
+                
                 self.consultsTableView.reloadData()
-                print(self.consultsTableView.numberOfSections)
                 if (self.consultVM.consults.count == 0 ){
                     self.exibeImagemNaoEncontrada()
+                }else{
+                    self.exibeTableView()
                 }
             }else{
                 self.exibeImagemNaoEncontrada()
@@ -109,6 +112,12 @@ extension ConsultsViewController : UITableViewDelegate, UITableViewDataSource{
         consultsTableView.isHidden = true
         erroView.isHidden = false
     }
+    
+    func exibeTableView(){
+        consultsTableView.isHidden = false
+        erroView.isHidden = true
+    }
+    
     
     func startStopAnimation(){
         if (spinner.isHidden){

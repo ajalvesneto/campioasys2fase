@@ -28,6 +28,10 @@ class HomeViewController: UIViewController {
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        boasvindasLabel.text = "Olá, \(UserDefaults.standard.string(forKey: "firstname") ??  "")"
+    }
+    
     
     @IBAction func comofunciona(_ sender: Any) {
         tabBarController?.selectedIndex = Screens.about.rawValue

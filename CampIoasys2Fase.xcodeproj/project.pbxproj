@@ -15,6 +15,7 @@
 		19329E3326608D4E0083E86C /* ListConsultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19329E3226608D4E0083E86C /* ListConsultModel.swift */; };
 		19405C86265E86EA00D05F4A /* ConsultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19405C85265E86EA00D05F4A /* ConsultViewModel.swift */; };
 		19405C88265EA17100D05F4A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19405C87265EA17000D05F4A /* ProfileViewController.swift */; };
+		1945814D26653CD80006A3BD /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1945814C26653CD80006A3BD /* swiftlint.yml */; };
 		194841D9265C0BA200B287EB /* RegisterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194841D8265C0BA200B287EB /* RegisterResult.swift */; };
 		19546BA52655CC66003B894A /* RegisterScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19546BA42655CC66003B894A /* RegisterScrollViewController.swift */; };
 		196A325C2659E97300C55F67 /* ProfessionalResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196A325B2659E97300C55F67 /* ProfessionalResult.swift */; };
@@ -55,6 +56,7 @@
 		19329E3226608D4E0083E86C /* ListConsultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListConsultModel.swift; sourceTree = "<group>"; };
 		19405C85265E86EA00D05F4A /* ConsultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultViewModel.swift; sourceTree = "<group>"; };
 		19405C87265EA17000D05F4A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1945814C26653CD80006A3BD /* swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
 		194841D8265C0BA200B287EB /* RegisterResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResult.swift; sourceTree = "<group>"; };
 		19546BA42655CC66003B894A /* RegisterScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScrollViewController.swift; sourceTree = "<group>"; };
 		196A325B2659E97300C55F67 /* ProfessionalResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalResult.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		19FD5619264C842E0022CEB7 /* CampIoasys2Fase */ = {
 			isa = PBXGroup;
 			children = (
+				1945814C26653CD80006A3BD /* swiftlint.yml */,
 				199F3577265FD03300C1F981 /* Enums */,
 				19A074092653EFA6001C55B8 /* Resources */,
 				19FD5634264C868A0022CEB7 /* Service */,
@@ -264,7 +267,6 @@
 				19FD5613264C842E0022CEB7 /* Sources */,
 				19FD5614264C842E0022CEB7 /* Frameworks */,
 				19FD5615264C842E0022CEB7 /* Resources */,
-				AE5F5162080E3246F8834AD4 /* [CP] Embed Pods Frameworks */,
 				192D1A1C2653398A00D37759 /* Swiftlint */,
 			);
 			buildRules = (
@@ -313,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1945814D26653CD80006A3BD /* swiftlint.yml in Resources */,
 				19A07411265417FA001C55B8 /* background_splash.png in Resources */,
 				19A0740B2653F06C001C55B8 /* logo.png in Resources */,
 				19C744192656939E004EF239 /* confirm.png in Resources */,
@@ -364,23 +367,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AE5F5162080E3246F8834AD4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CampIoasys2Fase/Pods-CampIoasys2Fase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CampIoasys2Fase/Pods-CampIoasys2Fase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CampIoasys2Fase/Pods-CampIoasys2Fase-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

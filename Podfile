@@ -6,6 +6,4 @@ target 'CampIoasys2Fase' do
   use_frameworks!
 
   # Pods for CampIoasys2Fase
-pod 'Alamofire', '~> 5.2'
-pod 'SwiftLint'
 end

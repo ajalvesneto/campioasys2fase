@@ -36,7 +36,7 @@ class ConsultsViewController : UIViewController {
     }
 }
 
-extension ConsultsViewController : UITableViewDelegate, UITableViewDataSource{
+extension ConsultsViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         consultVM.consults.count
@@ -53,9 +53,9 @@ extension ConsultsViewController : UITableViewDelegate, UITableViewDataSource{
         configureLayouViewCell(cell.consultView)
         
         /*var remotely = ""
-        if (professional.remotely){
-            remotely = "Remoto / "
-        }*/
+         if (professional.remotely){
+         remotely = "Remoto / "
+         }*/
         
         
         
@@ -77,8 +77,8 @@ extension ConsultsViewController : UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         /*let detailsVC = self.storyboard?.instantiateViewController(identifier: "details") as! DetailsViewController
-        detailsVC.professionalViewModel.professionals.append( professionals.professionals[indexPath.row])
-        self.navigationController?.pushViewController(detailsVC, animated: true)*/
+         detailsVC.professionalViewModel.professionals.append( professionals.professionals[indexPath.row])
+         self.navigationController?.pushViewController(detailsVC, animated: true)*/
     }
     
     
@@ -108,18 +108,18 @@ extension ConsultsViewController : UITableViewDelegate, UITableViewDataSource{
         
     }
     
-    func exibeImagemNaoEncontrada(){
+    func exibeImagemNaoEncontrada() {
         consultsTableView.isHidden = true
         erroView.isHidden = false
     }
     
-    func exibeTableView(){
+    func exibeTableView() {
         consultsTableView.isHidden = false
         erroView.isHidden = true
     }
     
     
-    func startStopAnimation(){
+    func startStopAnimation() {
         if (spinner.isHidden){
             spinner.isHidden = false
             spinner.startAnimating()

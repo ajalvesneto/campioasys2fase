@@ -13,10 +13,6 @@ struct UserModel : Codable {
     let lastname : String
     let email : String
     let telephone : String
-   /* let isAdmin : Bool
-    let dateCreation : String
-    let dateUpdate : String*/
-    //let isDeleted : Bool
 
     
     

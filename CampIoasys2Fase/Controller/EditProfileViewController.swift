@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 
-class EditProfileViewController : UIViewController{
+class EditProfileViewController : UIViewController {
     
-    var userViewModel = UserViewModel()
+    // MARK: - IBOutlets
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var sobrenomeTextField: UITextField!
@@ -19,12 +19,18 @@ class EditProfileViewController : UIViewController{
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var cancelarButton: UIButton!
     
+    // MARK: - Var
+    var userViewModel = UserViewModel()
     
+    
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setValues()
         configureLayout()
     }
+    
+    // MARK: - IBActions
     
     @IBAction func back(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -47,14 +53,16 @@ class EditProfileViewController : UIViewController{
         }
     }
     
-    func setValues(){
+    // MARK: - Functions
+    
+    func setValues() {
         nameTextField.text = UserDefaults.standard.string(forKey: "firstname")
         sobrenomeTextField.text = UserDefaults.standard.string(forKey: "lastname")
         emailTextField.text = UserDefaults.standard.string(forKey: "email")
         telefoneTextField.text = UserDefaults.standard.string(forKey: "telephone")
     }
     
-    func configureLayout(){
+    func configureLayout() {
         nameTextField.layer.borderColor = UIColor(red: 0.42, green: 0.55, blue: 1.00, alpha: 1.00).cgColor
         sobrenomeTextField.layer.borderColor = UIColor(red: 0.42, green: 0.55, blue: 1.00, alpha: 1.00).cgColor
         emailTextField.layer.borderColor = UIColor(red: 0.42, green: 0.55, blue: 1.00, alpha: 1.00).cgColor
@@ -64,7 +72,7 @@ class EditProfileViewController : UIViewController{
         
     }
     
-    func startStopAnimation(){
+    func startStopAnimation() {
         if (spinner.isHidden){
             spinner.isHidden = false
             spinner.startAnimating()

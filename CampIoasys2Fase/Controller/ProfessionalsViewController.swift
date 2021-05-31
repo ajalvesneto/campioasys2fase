@@ -10,22 +10,23 @@ import UIKit
 
 class ProfessionalsViewController : UIViewController {
     
+    //MARK: IBOutlet
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     @IBOutlet weak var professionalsTableView: UITableView!
     
     
-    
+    //MARK: Vars
     var professionals = ProfessionalViewModel(){
         didSet {
             professionalsTableView.reloadData()
         }
     }
-    
+    //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         professionalsTableView.dataSource = self
         professionalsTableView.delegate = self
-        list()
+        listProfessionals()
     }
 }
 
@@ -71,7 +72,7 @@ extension ProfessionalsViewController : UITableViewDelegate, UITableViewDataSour
         view.layer.cornerRadius = 24
     }
     
-    func list(){
+    func listProfessionals(){
         startStopAnimation()
         professionals.doListProfessionals(nil) { result, error in
             self.startStopAnimation()

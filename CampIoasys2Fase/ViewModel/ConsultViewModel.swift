@@ -19,7 +19,7 @@ class ConsultViewModel {
     
     let headers = ["Content-Type" : "application/json", "authorization" : "Bearer \(UserDefaults.standard.string(forKey: "token") ?? "")" ]
     
-    func doRegisterConsult(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){
+    func doRegisterConsult(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()) {
 
         let path = api.returnEndpoint(endpoint: .registerConsult) + (UserDefaults.standard.string(forKey: "id") ??  "") + "/consultations"
 
@@ -34,7 +34,7 @@ class ConsultViewModel {
         }
     }
     
-    func doListConsult(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){
+    func doListConsult(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()) {
 
         let path = api.returnEndpoint(endpoint: .registerConsult) + (UserDefaults.standard.string(forKey: "id") ??  "") + "/consultations"
 

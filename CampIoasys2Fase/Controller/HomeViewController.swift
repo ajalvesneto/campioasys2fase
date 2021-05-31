@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    
+    //MARK: IBOutlet
     @IBOutlet weak var comofuncionaView: UIView!
     @IBOutlet weak var profissionaisView: UIView!
     @IBOutlet weak var historicoView: UIView!
@@ -17,7 +17,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var boasvindasLabel: UILabel!
     
     
-    
+    //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         boasvindasLabel.text = "Olá, \(UserDefaults.standard.string(forKey: "firstname") ??  "")"
@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
         boasvindasLabel.text = "Olá, \(UserDefaults.standard.string(forKey: "firstname") ??  "")"
     }
     
-    
+    //MARK: Actions
     @IBAction func comofunciona(_ sender: Any) {
         tabBarController?.selectedIndex = Screens.about.rawValue
     }
@@ -48,6 +48,7 @@ class HomeViewController: UIViewController {
         
     }
     
+    //MARK: Methods
     func configureCardsViews(_ view : UIView){
         view.layer.borderWidth = 2
         view.layer.cornerRadius = 24

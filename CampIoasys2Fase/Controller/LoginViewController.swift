@@ -9,7 +9,7 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
-    // MARK: - IBOutlet
+    // MARK: - IBOutlets
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -19,6 +19,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var spinnerIndicator: UIActivityIndicatorView!
     
+    // MARK: - Vars
     var userViewModel = UserViewModel()
     
     // MARK: - Life Cycle Methods

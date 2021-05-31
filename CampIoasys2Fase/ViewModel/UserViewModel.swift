@@ -16,7 +16,7 @@ class UserViewModel {
     let headers = ["Content-Type" : "application/json"]
     
     // MARK: Methods
-    func doLogin(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){
+    func doLogin(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()) {
         network.performRequest(type: LoginResult.self, path: api.returnEndpoint(endpoint: .login), method: .post, headers : headers, parameters: parameters) {  result, error in
             
             if let error = error {
@@ -32,7 +32,7 @@ class UserViewModel {
         }
     }
     
-    func doRegister(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){
+    func doRegister(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()) {
         network.performRequest(type: RegisterResult.self, path: api.returnEndpoint(endpoint: .register), method: .post, headers : headers, parameters: parameters) {  result, error in
             
             if let error = error {
@@ -44,7 +44,7 @@ class UserViewModel {
         }
     }
     
-    func doUpdate(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()){
+    func doUpdate(parameters : [String : Any]?, completion : @escaping (Bool, Any?) -> ()) {
         let path = api.returnEndpoint(endpoint: .registerConsult) + (UserDefaults.standard.string(forKey: "id") ??  "")
         
         let headers = ["Content-Type" : "application/json", "Authorization" : "Bearer \(UserDefaults.standard.string(forKey: "token") ?? "")"]
@@ -65,7 +65,7 @@ class UserViewModel {
     
     
     
-    func setUserDefaults(_ result : LoginResult){
+    func setUserDefaults(_ result : LoginResult) {
         UserDefaults.standard.set(result.token, forKey: "token")
         UserDefaults.standard.set(result.user?.id, forKey: "id")
         UserDefaults.standard.set(result.user?.firstname, forKey: "firstname")
@@ -74,7 +74,7 @@ class UserViewModel {
         UserDefaults.standard.set(result.user?.telephone, forKey: "telephone")
     }
     
-    func unsetUserDefaults(){
+    func unsetUserDefaults() {
         let domain = Bundle.main.bundleIdentifier!
         UserDefaults.standard.removePersistentDomain(forName: domain)
         UserDefaults.standard.synchronize()

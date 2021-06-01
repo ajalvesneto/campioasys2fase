@@ -6,10 +6,9 @@
 </h4>
 
 ### Features
-- [x] Cadastro de usuário
-- [x] Listagem de profissionais
-- [x] Solicitação de consulta
+- [x] Cadastro de Usuário
+- [x] Alteração do Perfil 
+- [x] Listagem de Profissionais
+- [x] Solicitação de Consulta
 - [x] Histórico de Consulta
 - [ ] Avaliação de Profissional
-
-Repositório com a aplicação mobile (ios) desenvolvida como avaliação da segunda etapa do Camp IOASYS 2021

@@ -28,6 +28,10 @@ class ProfessionalsViewController : UIViewController {
         professionalsTableView.delegate = self
         listProfessionals()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        listProfessionals()
+    }
 }
 
 extension ProfessionalsViewController : UITableViewDelegate, UITableViewDataSource{

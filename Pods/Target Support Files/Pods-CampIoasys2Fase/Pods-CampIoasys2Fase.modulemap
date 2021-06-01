@@ -1,6 +1,0 @@
-framework module Pods_CampIoasys2Fase {
-  umbrella header "Pods-CampIoasys2Fase-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,6 @@
 		19329E3326608D4E0083E86C /* ListConsultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19329E3226608D4E0083E86C /* ListConsultModel.swift */; };
 		19405C86265E86EA00D05F4A /* ConsultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19405C85265E86EA00D05F4A /* ConsultViewModel.swift */; };
 		19405C88265EA17100D05F4A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19405C87265EA17000D05F4A /* ProfileViewController.swift */; };
-		1945814D26653CD80006A3BD /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1945814C26653CD80006A3BD /* swiftlint.yml */; };
 		194841D9265C0BA200B287EB /* RegisterResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194841D8265C0BA200B287EB /* RegisterResult.swift */; };
 		19546BA52655CC66003B894A /* RegisterScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19546BA42655CC66003B894A /* RegisterScrollViewController.swift */; };
 		196A325C2659E97300C55F67 /* ProfessionalResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196A325B2659E97300C55F67 /* ProfessionalResult.swift */; };
@@ -44,7 +43,6 @@
 		19FD5622264C842E0022CEB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FD5620264C842E0022CEB7 /* Main.storyboard */; };
 		19FD5624264C842F0022CEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FD5623264C842F0022CEB7 /* Assets.xcassets */; };
 		19FD5627264C842F0022CEB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19FD5625264C842F0022CEB7 /* LaunchScreen.storyboard */; };
-		8C55BA33C0CF9C938DB2988C /* Pods_CampIoasys2Fase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1C8716D71AC692F6DE3B6F /* Pods_CampIoasys2Fase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +54,6 @@
 		19329E3226608D4E0083E86C /* ListConsultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListConsultModel.swift; sourceTree = "<group>"; };
 		19405C85265E86EA00D05F4A /* ConsultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultViewModel.swift; sourceTree = "<group>"; };
 		19405C87265EA17000D05F4A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		1945814C26653CD80006A3BD /* swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
 		194841D8265C0BA200B287EB /* RegisterResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResult.swift; sourceTree = "<group>"; };
 		19546BA42655CC66003B894A /* RegisterScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScrollViewController.swift; sourceTree = "<group>"; };
 		196A325B2659E97300C55F67 /* ProfessionalResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalResult.swift; sourceTree = "<group>"; };
@@ -87,9 +84,6 @@
 		19FD5623264C842F0022CEB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19FD5626264C842F0022CEB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19FD5628264C842F0022CEB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B1C8716D71AC692F6DE3B6F /* Pods_CampIoasys2Fase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampIoasys2Fase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79CA53906FCD1E85EE5A3DC8 /* Pods-CampIoasys2Fase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampIoasys2Fase.debug.xcconfig"; path = "Target Support Files/Pods-CampIoasys2Fase/Pods-CampIoasys2Fase.debug.xcconfig"; sourceTree = "<group>"; };
-		86706F3D6E4A127DFAAABCEC /* Pods-CampIoasys2Fase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampIoasys2Fase.release.xcconfig"; path = "Target Support Files/Pods-CampIoasys2Fase/Pods-CampIoasys2Fase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C55BA33C0CF9C938DB2988C /* Pods_CampIoasys2Fase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +132,6 @@
 				19FD5619264C842E0022CEB7 /* CampIoasys2Fase */,
 				19FD5618264C842E0022CEB7 /* Products */,
 				503EEB71A264612071F3B4E9 /* Pods */,
-				929B175DCFA9F8B870C3F898 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,7 +146,6 @@
 		19FD5619264C842E0022CEB7 /* CampIoasys2Fase */ = {
 			isa = PBXGroup;
 			children = (
-				1945814C26653CD80006A3BD /* swiftlint.yml */,
 				199F3577265FD03300C1F981 /* Enums */,
 				19A074092653EFA6001C55B8 /* Resources */,
 				19FD5634264C868A0022CEB7 /* Service */,
@@ -242,18 +233,8 @@
 		503EEB71A264612071F3B4E9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				79CA53906FCD1E85EE5A3DC8 /* Pods-CampIoasys2Fase.debug.xcconfig */,
-				86706F3D6E4A127DFAAABCEC /* Pods-CampIoasys2Fase.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		929B175DCFA9F8B870C3F898 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6B1C8716D71AC692F6DE3B6F /* Pods_CampIoasys2Fase.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +244,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19FD562B264C842F0022CEB7 /* Build configuration list for PBXNativeTarget "CampIoasys2Fase" */;
 			buildPhases = (
-				1CB147DE0247C17BECA2CFAC /* [CP] Check Pods Manifest.lock */,
 				19FD5613264C842E0022CEB7 /* Sources */,
 				19FD5614264C842E0022CEB7 /* Frameworks */,
 				19FD5615264C842E0022CEB7 /* Resources */,
@@ -315,7 +295,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1945814D26653CD80006A3BD /* swiftlint.yml in Resources */,
 				19A07411265417FA001C55B8 /* background_splash.png in Resources */,
 				19A0740B2653F06C001C55B8 /* logo.png in Resources */,
 				19C744192656939E004EF239 /* confirm.png in Resources */,
@@ -346,28 +325,6 @@
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
-		};
-		1CB147DE0247C17BECA2CFAC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CampIoasys2Fase-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -548,7 +505,6 @@
 		};
 		19FD562C264C842F0022CEB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79CA53906FCD1E85EE5A3DC8 /* Pods-CampIoasys2Fase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -568,7 +524,6 @@
 		};
 		19FD562D264C842F0022CEB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86706F3D6E4A127DFAAABCEC /* Pods-CampIoasys2Fase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
